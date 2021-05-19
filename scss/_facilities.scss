@@ -1,0 +1,133 @@
+@use 'colors';
+@use 'base';
+
+//Stránka Vybavení pro mobil, tablet i PC
+
+.facilities {
+  background-color: colors.$color-grey;
+
+  @media screen and (min-width: 540px) {
+    background-color: colors.$color-white;
+  }
+}
+
+//Stránka Vybavení nadpisy pro mobil, tablet i PC
+
+.facilities__headline {
+  font-size: 25px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 35px;
+  }
+}
+
+.facilities__headline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+.facilities__headline2 {
+  font-size: 20px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 23px;
+    padding: 0;
+    margin: base.$spacer 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 26px;
+  }
+}
+
+.facilities__headline2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+//Stránka Vybavení obsah a grid ikony
+
+.facilities__content {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+}
+
+.grid__item {
+  display: flex;
+  margin: base.$spacer;
+  align-items: center;
+
+  @media screen and (min-width: 540px) {
+    margin-bottom: 0;
+  }
+}
+
+.facilities__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: base.$spacer;
+}
+
+.facilities__image {
+  @media screen and (min-width: 540px) {
+    margin-top: base.$spacer;
+  }
+}
+
+.facilitites__grid {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+//Margin-top pro napis h2, aby nebyl tak blízko k ikonám
+
+.facilities__headline2--margin-top {
+  @media screen and (min-width: 540px) {
+    margin-top: 50px;
+  }
+}
+
+//Specifika pro PC 960 px a více
+
+@media screen and (min-width: 960px) {
+  .facilities__content {
+    display: flex;
+  }
+
+  .facilities__content-left,
+  .facilities__content-image {
+    flex: 0 0 50%;
+  }
+
+  .facilities__image {
+      padding-left: 50px;
+      margin: 16px 0 0 0;
+  }
+}
