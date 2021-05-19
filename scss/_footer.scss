@@ -1,0 +1,56 @@
+@use 'colors';
+@use 'base';
+
+//Footer pro mobil, tablet a PC
+
+.footer {
+  color: colors.$color-white;
+  background-color: colors.$color-primary;
+  padding: base.$spacer;
+  margin-top: base.$spacer;
+  font-size: 14px;
+
+  @media screen and (min-width: 540px) {
+    display: flex;
+    font-size: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: base.$body-text;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+}
+
+.footer__address {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 540px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__contact-email {
+  color: colors.$color-white;
+}
+
+.footer__headline3 {
+  margin-top: 0;
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: 14px;
+
+  @media screen and (min-width: 540px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: base.$body-text;
+  }
+}

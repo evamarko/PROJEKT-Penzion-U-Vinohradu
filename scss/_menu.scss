@@ -1,0 +1,102 @@
+@use 'colors';
+@use 'base';
+
+//Header hamburger menu pro mobil a tablet a upravené menu pro PC
+
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.menu__list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 540px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-right: base.$spacer;
+  }
+}
+
+//Header menu toggler
+
+.menu__toggler {
+  font-size: 20px;
+  margin: 15px base.$spacer;
+  display: block;
+  cursor: pointer;
+
+  @media screen and (min-width: 540px) {
+    display: none;
+  }
+}
+
+//Header menu položky a jejich borders
+
+.menu__item {
+  border-bottom: 1.5px solid colors.$color-grey;
+
+  @media screen and (min-width: 540px) {
+    border: none;
+    flex: 1 1 100%;
+    border-right: 1.5px solid colors.$color-grey;
+  }
+}
+
+.menu__item--border-top {
+  border-top: 1.5px solid colors.$color-grey;
+
+  @media screen and (min-width: 540px) {
+    border-top: none;
+  }
+}
+
+.menu__item--border-right {
+  border: none;
+}
+
+//Header menu odkazy
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: colors.$color-black;
+  background-color: colors.$color-white;
+  text-align: center;
+  font-size: 16px;
+
+  @media screen and (min-width: 540px) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: colors.$color-white;
+  }
+}
+
+.menu__link:hover {
+  background-color: colors.$color-primary;
+  color: colors.$color-white;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+//Menu specifikace pro PC
+
+.header__menu {
+  @media screen and (min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

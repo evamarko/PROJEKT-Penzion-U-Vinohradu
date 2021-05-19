@@ -1,0 +1,152 @@
+@use 'colors';
+@use 'base';
+
+//Main pro homepage mobil,tablet a PC
+
+main {
+  @media screen and (min-width: 540px) {
+    padding: 60px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 90px;
+  }
+}
+
+.homepage__content-left,
+.homepage__content2-right {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 0;
+    flex: 0 0 50%;
+  }
+}
+
+//Nadpisy H1 a H2 pro mobil, tablet i PC
+
+.homepage__headline {
+  font-size: 25px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 35px;
+  }
+}
+
+.homepage__headline2 {
+  font-size: 20px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 23px;
+    padding: 0;
+    margin: base.$spacer 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 26px;
+  }
+}
+
+.homepage__headline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+.homepage__headline2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+//Obrázek a mapa pro mobil, tablet i PC
+
+.homepage__image {
+  @media screen and (min-width: 540px) {
+    margin: base.$spacer 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-top: 16px;
+  }
+}
+
+.homepage__map {
+  width: 100%;
+  height: 300px;
+
+  @media screen and (min-width: 540px) {
+    height: 350px;
+    margin-top: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-top: 16px;
+  }
+}
+
+//Main pro homepage specifika pro PC
+
+@media screen and (min-width: 960px) {
+  .homepage__content,
+  .homepage__content2 {
+    display: flex;
+  }
+
+  .homepage__content2 {
+    flex-direction: row-reverse;
+  }
+
+  .homepage__content-image,
+  .homepage__content2-right {
+    padding-left: 50px;
+  }
+
+  .homepage__content-map {
+    flex: 0 0 50%;
+  }
+}
+
+  //Nastavení pruhu z hlavního obsahu pro PC, ještě nevím, zda nechám
+
+  body {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .header,
+  .main {
+    background-color: colors.$color-white;
+  }
+
+
+//Homepage odkazy
+
+.homepage__link {
+  color: #228b22;
+}
+
+.homepage__link:hover,
+.homepage__link:active {
+color: #808080;
+}

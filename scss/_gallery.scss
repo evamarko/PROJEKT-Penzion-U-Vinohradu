@@ -1,0 +1,61 @@
+@use 'colors';
+@use 'base';
+
+//Stránka Galerie pro mobil, tablet i PC
+
+.gallery {
+  background-color: colors.$color-grey;
+
+  @media screen and (min-width: 540px) {
+    background-color: colors.$color-white;
+  }
+}
+
+.gallery__headline {
+  font-size: 25px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 35px;
+  }
+}
+
+.gallery__headline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+.gallery__image--margin-top {
+  margin-top: base.$spacer;
+
+  @media screen and (min-width: 960px) {
+    margin-top: 0;
+  }
+}
+
+// Galerie grid pro PC
+
+@media screen and (min-width: 960px) {
+  .gallery__grid {
+    margin-top: 50px;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 3px;
+  }
+
+  .gallery__image--grid {
+    grid-column: 1 / -1;
+  }
+}

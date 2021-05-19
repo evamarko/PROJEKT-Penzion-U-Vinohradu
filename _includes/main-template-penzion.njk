@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {{title}} </title>
+
+    <!-- Google Fonts: Merriweather 400, 700 --!>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--poznámky k projektu-->
+
+    <header class="header">
+      <div class="header__contact">
+        <p class="header__contact-phone">+ 420 723 918 464 (8-19 hod.)</p>
+
+        <a class="header__contact-email" href="mailto:info@penzionuvinohradu.cz"
+          >info@penzionuvinohradu.cz</a
+        >
+      </div>
+
+      <div class="header__menu">
+        <div class="header__logo">
+          Vinný sklep a <br />
+          penzion U Vinohradu
+        </div>
+
+        <nav class="menu">
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+          <ul class="menu__list">
+            <li class="menu__item menu__item--border-top">
+              <a class="menu__link" href="/vybaveni/">Vybavení</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/ubytovani/">Ubytování</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/degustace/">Degustace</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="/galerie/">Galerie</a>
+            </li>
+            <li class="menu__item menu__item--border-right">
+              <a class="menu__link" href="/kontakt/">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__image"></div>
+    </header>
+
+    <main class="main">
+
+     {{ content | safe }}
+
+    
+    </main>
+
+    <footer class="footer">
+      <div class="footer__address">
+        <h3 class="footer__headline3">Adresa</h3>
+
+        <p>
+          Vinný sklep a penzion U Vinohradu<br />
+          Púrynky - Pod Panskýma 631<br />
+          691 02 Velké Bílovice<br />
+        </p>
+      </div>
+
+      <div class="footer__contact">
+        <h3 class="footer__headline3">Kontakty</h3>
+        <p>
+          Telefon: <br />
+          +420 723 918 464 (8-19 hod.) <br />
+        </p>
+          
+          <div class="footer__email">
+          E-mail: <br />
+          <a
+            class="footer__contact-email"
+            href="mailto:info@penzionuvinohradu.cz"
+            >info@penzionuvinohradu.cz</a
+          >
+        </div>
+        </div>
+
+        
+       
+    
+    </footer>
+    <div class="footer__copyright">
+        <p>
+        ©2021, Vinný sklep a penzion U Vinohradu
+        </p>
+        </div>
+  </body>
+</html>

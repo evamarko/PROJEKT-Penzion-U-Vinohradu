@@ -1,0 +1,33 @@
+@use 'colors';
+
+//Base pro mobil, tablet i PC
+
+//Nastavení paramatrů písmo
+
+$spacer: 30px;
+$body-text: 16px;
+$default-font: "Merriweather", serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $default-font;
+  font-size: $body-text;
+  color: colors.$color-black;
+  background-color: colors.$color-grey;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
