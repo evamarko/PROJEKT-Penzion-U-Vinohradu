@@ -1,0 +1,129 @@
+@use 'colors';
+@use 'base';
+
+//Stránka Ubytování
+
+//Nadpisy H1
+
+.accommodation__headline {
+  font-size: 25px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 35px;
+  }
+}
+
+.accommodation__headline::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+//Padding stránky
+
+.accommodation__contain {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+}
+
+.accommodation__contain--bottom {
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+}
+
+//Nadpisy H2
+.accommodation__headline2 {
+  font-size: 20px;
+  margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    font-size: 23px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 26px;
+  }
+}
+
+.accommodation__headline2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: colors.$color-primary;
+  margin-top: base.$body-text;
+}
+
+//Ikony a divy check-in a check-out
+
+.accommodation__icon {
+  width: 50px;
+  height: 50px;
+  margin-right: base.$spacer;
+}
+
+.accommodation__check-in,
+.accommodation__check-out {
+  display: flex;
+  align-items: center;
+}
+
+//Tabulka ceník ubytování
+
+.accommodation__table {
+  text-align: center;
+  margin-top: base.$spacer;
+  border-spacing: 0;
+  padding: 0 15px;
+}
+
+th,
+td {
+  border-bottom: 2px solid colors.$color-primary;
+
+  padding: 10px 0px;
+}
+
+//Ubytování flexbox - fotka pokoje a apartmánu a popis pokojů a aprtmánů
+
+.accommodation__flexbox {
+  @media screen and (min-width: 540px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: base.$spacer;
+  }
+}
+
+.accommodation__flexbox-item {
+  @media screen and (min-width: 540px) {
+    flex: 0 0 60%;
+    padding-left: base.$spacer;
+  }
+}
+
+.accommodation__flexbox-image {
+  @media screen and (min-width: 540px) {
+    flex: 0 0 40%;
+    padding-top: 16px;
+  }
+}

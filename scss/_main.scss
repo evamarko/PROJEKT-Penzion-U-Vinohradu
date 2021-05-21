@@ -3,7 +3,7 @@
 
 //Main pro homepage mobil,tablet a PC
 
-main {
+section {
   @media screen and (min-width: 540px) {
     padding: 60px;
   }
@@ -127,26 +127,33 @@ main {
   }
 }
 
-  //Nastavení pruhu z hlavního obsahu pro PC, ještě nevím, zda nechám
+//Barvy odkazy obsah stránek
 
-  body {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .header,
-  .main {
-    background-color: colors.$color-white;
-  }
-
-
-//Homepage odkazy
-
-.homepage__link {
+.homepage__link,
+.facilities__link {
   color: #228b22;
 }
 
 .homepage__link:hover,
-.homepage__link:active {
-color: #808080;
+.homepage__link:active,
+.homepage__link:focus,
+.facilities__link:hover,
+.facilities__link:active,
+.facilities__link:focus {
+  color: 	#606060;
+}
+
+//Pro Main pozadí obrázek hlavička pro mobil a tablet a PC
+
+.header__image {
+  background: url(./../images/header.jpg) no-repeat center/cover;
+  height: 300px;
+
+  @media screen and (min-width: 540px) {
+    height: 350px;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: 650px;
+  }
 }

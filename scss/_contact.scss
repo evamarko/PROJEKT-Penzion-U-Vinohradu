@@ -5,8 +5,8 @@
 
 //Kontakt obsah
 
-.contact {
-  padding: base.$spacer;
+.contact__flexbox {
+  padding: 0 base.$spacer;
 
   @media screen and (min-width: 540px) {
     padding: 0;
@@ -16,9 +16,11 @@
 .contact__headline {
   font-size: 25px;
   margin: 0;
+  padding: base.$spacer base.$spacer 0 base.$spacer;
 
   @media screen and (min-width: 540px) {
     font-size: 30px;
+    padding: 0;
   }
 
   @media screen and (min-width: 960px) {
@@ -62,8 +64,9 @@
 }
 
 .contact__email:hover,
-.contact__email:active {
-  color: #808080;
+.contact__email:active,
+.contact__email:focus {
+  color: #606060;
 }
 
 //Kontaktní formulář
@@ -76,7 +79,7 @@
   }
 
   @media screen and (min-width: 960px) {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -117,6 +120,12 @@
   font-size: 15px;
   border: 1px solid black;
   cursor: pointer;
+}
+
+.contact__form-button:hover,
+.contact__form-button:active,
+.contact__form-button:focus {
+  background-color: #606060;
 }
 
 //Kontakt - mapa

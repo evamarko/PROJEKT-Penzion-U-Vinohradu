@@ -3,14 +3,6 @@
 
 //Stránka Galerie pro mobil, tablet i PC
 
-.gallery {
-  background-color: colors.$color-grey;
-
-  @media screen and (min-width: 540px) {
-    background-color: colors.$color-white;
-  }
-}
-
 .gallery__headline {
   font-size: 25px;
   margin: 0;

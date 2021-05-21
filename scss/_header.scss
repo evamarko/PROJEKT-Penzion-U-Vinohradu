@@ -31,31 +31,44 @@
 
 //Header logo pro mobil, tablet i PC
 
-.header__logo {
-  font-size: 25px;
+.header__logo-text {
+  font-size: 18px;
   text-transform: uppercase;
-  margin: 15px base.$spacer;
+  margin: 15px 15px 0 0;
+  background-color: colors.$color-white;
 
   @media screen and (min-width: 540px) {
-    margin-left: 60px;
+    font-size: 23px;
   }
 
   @media screen and (min-width: 960px) {
-    margin-left: 90px;
+    font-size: 25px;
   }
 }
 
-//pozadí obrázek hlavička pro mobil a tablet
+.header__logo-link {
+  text-decoration: none;
+  color: colors.$color-black;
+  display: flex;
+}
 
-.header__image {
-  background: url(./../images/header.jpg) no-repeat center/cover;
-  height: 300px;
+.header__logo-image {
+  width: 50px;
+  height: 50px;
+  margin: 15px 15px 15px 30px;
 
   @media screen and (min-width: 540px) {
-    height: 350px;
+    width: 60px;
+    height: 60px;
   }
 
   @media screen and (min-width: 960px) {
-    height: 550px;
+    width: 75px;
+    height: 75px;
+    margin-right: 15px;
   }
+}
+
+.header__menu {
+  background-color: colors.$color-white;
 }

@@ -27,9 +27,10 @@
 
 .menu__toggler {
   font-size: 20px;
-  margin: 15px base.$spacer;
+  padding: 15px base.$spacer;
   display: block;
   cursor: pointer;
+  background-color: colors.$color-white;
 
   @media screen and (min-width: 540px) {
     display: none;
