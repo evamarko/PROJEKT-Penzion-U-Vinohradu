@@ -26,7 +26,7 @@
 //Header menu toggler
 
 .menu__toggler {
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px base.$spacer;
   display: block;
   cursor: pointer;
@@ -83,9 +83,11 @@
   }
 }
 
-.menu__link:hover {
-  background-color: colors.$color-primary;
+.menu__link:hover,
+.menu__link:active,
+.menu__link:focus {
   color: colors.$color-white;
+  background-color: colors.$color-primary;
 }
 
 .menu__checkbox:checked ~ .menu__list {
@@ -101,3 +103,13 @@
     align-items: center;
   }
 }
+
+//Fixní menu pro PC
+@media screen and (min-width: 960px) {
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}
+

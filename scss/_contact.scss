@@ -5,6 +5,19 @@
 
 //Kontakt obsah
 
+.contact {
+ padding-bottom: base.$spacer;
+
+  @media screen and (min-width: 960px) {
+    padding-top: 200px;
+  }
+}
+
+.contact2 {
+  background-color: colors.$color-white;
+  padding-bottom: base.$spacer;
+}
+
 .contact__flexbox {
   padding: 0 base.$spacer;
 

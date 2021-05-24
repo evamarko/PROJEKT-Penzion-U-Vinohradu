@@ -3,16 +3,25 @@
 
 //Stránka Ubytování
 
+.accommodation {
+  @media screen and (min-width: 960px) {
+    padding-top: 200px;
+  }
+}
+
+.accommodation2 {
+  background-color: colors.$color-white;
+}
+
 //Nadpisy H1
 
 .accommodation__headline {
   font-size: 25px;
   margin: 0;
-  padding: base.$spacer base.$spacer 0 base.$spacer;
+  padding: 0;
 
   @media screen and (min-width: 540px) {
     font-size: 30px;
-    padding: 0;
     margin-bottom: base.$spacer;
   }
 
@@ -30,7 +39,7 @@
   margin-top: base.$body-text;
 }
 
-//Padding stránky
+//Padding a margin stránky
 
 .accommodation__contain {
   padding: base.$spacer;
@@ -40,24 +49,16 @@
   }
 }
 
-.accommodation__contain--bottom {
-  padding: base.$spacer base.$spacer 0 base.$spacer;
 
-  @media screen and (min-width: 540px) {
-    padding: 0;
-  }
-}
 
 //Nadpisy H2
 .accommodation__headline2 {
   font-size: 20px;
   margin: 0;
-  padding: base.$spacer base.$spacer 0 base.$spacer;
+  padding: 0;
 
   @media screen and (min-width: 540px) {
     font-size: 23px;
-    padding: 0;
-    margin-top: 50px;
   }
 
   @media screen and (min-width: 960px) {
@@ -92,9 +93,10 @@
 
 .accommodation__table {
   text-align: center;
-  margin-top: base.$spacer;
+  
   border-spacing: 0;
-  padding: 0 15px;
+  padding: 0;
+  width: 100%;
 }
 
 th,
@@ -110,7 +112,7 @@ td {
   @media screen and (min-width: 540px) {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: base.$spacer;
+    margin-top: 20px;
   }
 }
 
@@ -122,8 +124,24 @@ td {
 }
 
 .accommodation__flexbox-image {
+
+  padding-bottom: base.$spacer;
+
   @media screen and (min-width: 540px) {
     flex: 0 0 40%;
-    padding-top: 16px;
+    margin: 0;
+  }
+}
+
+.accommodation__flexbox-table {
+  @media screen and (min-width: 960px) {
+    display: flex;
+  }
+}
+
+.accommodation__flexbox-item-table{
+  @media screen and (min-width: 960px) {
+    flex: 0 0 60%;
+    padding-right: base.$spacer;
   }
 }

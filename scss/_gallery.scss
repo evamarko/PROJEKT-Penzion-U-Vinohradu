@@ -3,6 +3,12 @@
 
 //Stránka Galerie pro mobil, tablet i PC
 
+.gallery {
+  @media screen and (min-width: 960px) {
+    padding-top: 200px;
+  }
+}
+
 .gallery__headline {
   font-size: 25px;
   margin: 0;

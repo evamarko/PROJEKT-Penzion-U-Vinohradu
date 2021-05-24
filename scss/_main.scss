@@ -13,6 +13,10 @@ section {
   }
 }
 
+.homepage2 {
+  background-color: colors.$color-white;
+}
+
 .homepage__content-left,
 .homepage__content2-right {
   padding: base.$spacer;
@@ -32,11 +36,10 @@ section {
 .homepage__headline {
   font-size: 25px;
   margin: 0;
-  padding: base.$spacer base.$spacer 0 base.$spacer;
+  padding: 0;
 
   @media screen and (min-width: 540px) {
     font-size: 30px;
-    padding: 0;
     margin-bottom: base.$spacer;
   }
 
@@ -48,12 +51,10 @@ section {
 .homepage__headline2 {
   font-size: 20px;
   margin: 0;
-  padding: base.$spacer base.$spacer 0 base.$spacer;
+  padding: 0;
 
   @media screen and (min-width: 540px) {
     font-size: 23px;
-    padding: 0;
-    margin: base.$spacer 0;
   }
 
   @media screen and (min-width: 960px) {
@@ -82,26 +83,29 @@ section {
 //Obrázek a mapa pro mobil, tablet i PC
 
 .homepage__image {
+  margin-bottom: base.$spacer;
+
   @media screen and (min-width: 540px) {
-    margin: base.$spacer 0;
+    margin: base.$spacer 0 0 0;
   }
 
   @media screen and (min-width: 960px) {
-    margin-top: 16px;
+    margin: 0;
   }
 }
 
 .homepage__map {
   width: 100%;
   height: 300px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 540px) {
     height: 350px;
-    margin-top: base.$spacer;
+    margin: base.$spacer 0 0 0;
   }
 
   @media screen and (min-width: 960px) {
-    margin-top: 16px;
+    margin: 0;
   }
 }
 
@@ -154,6 +158,6 @@ section {
   }
 
   @media screen and (min-width: 960px) {
-    height: 650px;
+    height: 700px;
   }
 }

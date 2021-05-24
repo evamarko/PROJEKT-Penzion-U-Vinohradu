@@ -29,6 +29,16 @@
   display: block;
 }
 
+.header__contact-email {
+  text-decoration: none;
+}
+
+.header__contact-email:hover,
+.header__contact-email:focus,
+.header__contact-email:active {
+  text-decoration: underline;
+}
+
 //Header logo pro mobil, tablet i PC
 
 .header__logo-text {
