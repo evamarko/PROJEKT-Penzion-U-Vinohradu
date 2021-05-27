@@ -26,51 +26,15 @@
   }
 }
 
+//Kontakt nadpis
 .contact__headline {
-  font-size: 25px;
-  margin: 0;
-  padding: base.$spacer base.$spacer 0 base.$spacer;
+  padding: base.$spacer 0 0 base.$spacer; 
 
   @media screen and (min-width: 540px) {
-    font-size: 30px;
     padding: 0;
   }
-
-  @media screen and (min-width: 960px) {
-    font-size: 35px;
-  }
 }
 
-.contact__headline::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
-
-.contact__headline3 {
-  font-size: 18px;
-  margin-top: 50px;
-
-  @media screen and (min-width: 540px) {
-    font-size: 19px;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 20px;
-  }
-}
-
-.contact__headline3::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
 
 .contact__email {
   color: #228b22;

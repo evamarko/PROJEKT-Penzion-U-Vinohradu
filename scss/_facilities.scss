@@ -1,85 +1,36 @@
 @use 'colors';
 @use 'base';
 
-//Stránka Vybavení pro mobil, tablet i PC
+//Stránka Vybavení
 
-
+//Padding
 .facilities {
-
   @media screen and (min-width: 960px) {
     padding-top: 200px;
   }
-  
 }
 
-.facilities2 {
-  background-color: colors.$color-white;
-}
-
-
-
-
-
-//Nadpisy pro mobil, tablet i PC
-.facilities__headline {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: 540px) {
-    font-size: 30px;
-    margin-bottom: base.$spacer;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 35px;
-  }
-}
-
-.facilities__headline::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
-
-.facilities__headline2 {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: 540px) {
-    font-size: 23px;
-    margin: 0;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 26px;
-  }
-}
-
-.facilities__headline2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
-
-//Stránka Vybavení obsah a grid ikony
-
-.facilities__content-left {
+.facilities__content-left,
+.facilities2__content-left {
   padding: base.$spacer;
 
   @media screen and (min-width: 540px) {
     padding: 0;
   }
+
+  @media screen and (min-width: 960px) {
+    flex: 0 0 60%;
+  }
 }
 
-.grid__item {
+//Bílá barva pozadí
+.facilities2 {
+  background-color: colors.$color-white;
+}
+
+//Flexbox
+.facilities__grid-item,
+.facilities2__grid-item {
   display: flex;
   margin: base.$spacer;
   align-items: center;
@@ -89,19 +40,17 @@
   }
 }
 
-.facilities__icon {
+//Ikony
+.facilities__icon,
+.facilities2__icon {
   width: 50px;
   height: 50px;
   margin-right: base.$spacer;
 }
 
-.facilities__image {
-  @media screen and (min-width: 540px) {
-    margin-top: base.$spacer;
-  }
-}
-
-.facilitites__grid {
+//Grid - ikony
+.facilitites__grid,
+.facilitites2__grid {
   @media screen and (min-width: 540px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,7 +61,7 @@
   }
 }
 
-.grid__item--padding-bottom {
+.facilities2__grid-item--padding-bottom {
   padding-bottom: 60px;
   margin-bottom: 0;
 
@@ -121,25 +70,39 @@
   }
 }
 
-//Specifika pro PC 960 px a více
-
-@media screen and (min-width: 960px) {
-  .facilities__content {
-    display: flex;
+//Obrázky
+.facilities__image,
+.facilities2__image {
+  @media screen and (min-width: 540px) {
+    margin-top: base.$spacer;
   }
 
-  .facilities__content-left {
-    flex: 0 0 60%;
-  }
-
-  .facilities__content-image {
-    flex: 0 0 40%;
-  }
-
-  .facilities__image {
-      padding-left: 50px;
-      margin: 0;
+  @media screen and (min-width: 960px) {
+    padding-left: 50px;
+    margin: 0;
   }
 }
 
+//Specifika pro PC 960 px a více
+@media screen and (min-width: 960px) {
+  .facilities__content,
+  .facilities2__content {
+    display: flex;
+  }
 
+  .facilities__content-image,
+  .facilities2__content-image {
+    flex: 0 0 40%;
+  }
+}
+
+//Odkazy barvy
+.facilities2__link {
+  color: #228b22;
+}
+
+.facilities2__link:hover,
+.facilities2__link:active,
+.facilities2__link:focus {
+  color: #606060;
+}

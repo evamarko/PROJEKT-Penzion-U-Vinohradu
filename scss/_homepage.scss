@@ -1,0 +1,98 @@
+@use 'colors';
+@use 'base';
+
+//Homepage
+
+//Obrázek hlavička, jen na homepage
+.header__image {
+  background: url(./../images/header.jpg) no-repeat center/cover;
+  height: 300px;
+
+  @media screen and (min-width: 540px) {
+    height: 350px;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: 700px;
+  }
+}
+
+//Padding
+.homepage__content-left,
+.homepage2__content-right {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    flex: 0 0 50%;
+  }
+}
+
+//Obrázek
+.homepage__image {
+  margin-bottom: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    margin: base.$spacer 0 0 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin: 0;
+  }
+}
+
+//Mapa
+.homepage__map {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 540px) {
+    height: 350px;
+    margin: base.$spacer 0 0 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin: 0;
+  }
+}
+
+//Specifika pro PC
+@media screen and (min-width: 960px) {
+  .homepage__content,
+  .homepage2__content {
+    display: flex;
+  }
+
+  .homepage2__content {
+    flex-direction: row-reverse;
+  }
+
+  .homepage__content-image,
+  .homepage2__content-right {
+    padding-left: 50px;
+  }
+
+  .homepage__content-map {
+    flex: 0 0 50%;
+  }
+}
+
+//Odkazy barvy
+.homepage__link {
+  color: #228b22;
+}
+
+.homepage__link:hover,
+.homepage__link:active,
+.homepage__link:focus {
+  color: #606060;
+}
+
+//Bílé pozadí
+.homepage2 {
+  background-color: colors.$color-white;
+}

@@ -3,45 +3,16 @@
 
 //Stránka Ubytování
 
+//Paddingy
 .accommodation {
   @media screen and (min-width: 960px) {
     padding-top: 200px;
   }
 }
 
-.accommodation2 {
-  background-color: colors.$color-white;
-}
-
-//Nadpisy H1
-
-.accommodation__headline {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: 540px) {
-    font-size: 30px;
-    margin-bottom: base.$spacer;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 35px;
-  }
-}
-
-.accommodation__headline::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
-
-//Padding a margin stránky
-
-.accommodation__contain {
+.accommodation__contain,
+.accommodation2__contain,
+.accommodation3__contain {
   padding: base.$spacer;
 
   @media screen and (min-width: 540px) {
@@ -49,34 +20,12 @@
   }
 }
 
-
-
-//Nadpisy H2
-.accommodation__headline2 {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: 540px) {
-    font-size: 23px;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 26px;
-  }
+//Bílé pozadí
+.accommodation2 {
+  background-color: colors.$color-white;
 }
 
-.accommodation__headline2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: colors.$color-primary;
-  margin-top: base.$body-text;
-}
-
-//Ikony a divy check-in a check-out
-
+//Flexbox, ikony
 .accommodation__icon {
   width: 50px;
   height: 50px;
@@ -89,26 +38,20 @@
   align-items: center;
 }
 
-//Tabulka ceník ubytování
-
-.accommodation__table {
-  text-align: center;
-  
-  border-spacing: 0;
-  padding: 0;
-  width: 100%;
-}
-
-th,
-td {
-  border-bottom: 2px solid colors.$color-primary;
-
-  padding: 10px 0px;
-}
-
-//Ubytování flexbox - fotka pokoje a apartmánu a popis pokojů a aprtmánů
-
 .accommodation__flexbox {
+  @media screen and (min-width: 960px) {
+    display: flex;
+  }
+}
+
+.accommodation__check-in {
+  @media screen and (min-width: 960px) {
+    margin-right: base.$spacer;
+  }
+}
+
+//Flexbox, pokoje
+.accommodation2__flexbox {
   @media screen and (min-width: 540px) {
     display: flex;
     flex-direction: row-reverse;
@@ -116,15 +59,14 @@ td {
   }
 }
 
-.accommodation__flexbox-item {
+.accommodation2__flexbox-item {
   @media screen and (min-width: 540px) {
     flex: 0 0 60%;
     padding-left: base.$spacer;
   }
 }
 
-.accommodation__flexbox-image {
-
+.accommodation2__flexbox-image {
   padding-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
@@ -133,15 +75,37 @@ td {
   }
 }
 
-.accommodation__flexbox-table {
+//Tabulka ceník ubytování
+.accommodation3__table {
+  text-align: center;
+  border-spacing: 0;
+  padding: 0;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 2px solid colors.$color-primary;
+  padding: 10px 0px;
+}
+
+//Flexbox, tabulka
+.accommodation3__flexbox-table {
   @media screen and (min-width: 960px) {
     display: flex;
   }
 }
 
-.accommodation__flexbox-item-table{
+.accommodation3__flexbox-item-table{
   @media screen and (min-width: 960px) {
-    flex: 0 0 60%;
-    padding-right: base.$spacer;
+    flex: 0 0 50%;
+    border: 3px solid colors.$color-primary;
+    padding: 15px;
+  }
+}
+
+.accommodation3__flexbox-item {
+  @media screen and (min-width: 960px) {
+    margin-left: base.$spacer;
   }
 }
