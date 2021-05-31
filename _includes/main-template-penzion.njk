@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> {{title}} </title>
+    <title>{{ title }}</title>
 
-    <!-- Google Fonts: Merriweather 400, 700 --!>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,9 +13,8 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!--poznámky k projektu-->
 
+  <body>
     <header class="header">
       <div class="header__contact">
         <p class="header__contact-phone">+ 420 723 918 464 (8-19 hod.)</p>
@@ -27,10 +25,17 @@
       </div>
 
       <div class="header__menu">
-
-        <a class="header__logo-link" href="/"><img class="header__logo-image" src="/images/logo.png" alt="Logo stránky"><div class="header__logo-text">Vinný sklep a <br />
-          penzion U Vinohradu
-        </div></a> 
+        <a class="header__logo-link" href="/"
+          ><img
+            class="header__logo-image"
+            src="/images/logo.png"
+            alt="Logo stránky hrozen"
+          />
+          <div class="header__logo-text">
+            Vinný sklep a <br />
+            penzion U Vinohradu
+          </div>
+        </a>
 
         <nav class="menu">
           <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
@@ -55,15 +60,10 @@
           </ul>
         </nav>
       </div>
-
-    
     </header>
 
     <main class="main">
-
-     {{ content | safe }}
-
-    
+      {{ content | safe }}
     </main>
 
     <footer class="footer">
@@ -83,33 +83,29 @@
           Telefon: <br />
           +420 723 918 464 (8-19 hod.) <br />
         </p>
-          
-          <div class="footer__email">
+
+        <div class="footer__email">
           E-mail: <br />
-          <a
-            class="footer__contact-email"
-            href="mailto:info@penzionuvinohradu.cz"
+          <a class="footer__email-link" href="mailto:info@penzionuvinohradu.cz"
             >info@penzionuvinohradu.cz</a
           >
         </div>
-         </div>
-
-        <div class="footer__facebook">
-        <h3 class="footer__headline3">Najdete nás na Facebooku</h3>
-        
-        <a href="https://www.facebook.com/Vinn%C3%BD-sklep-a-penzion-U-Vinohradu-205435942830300"><img
-        class="footer__facebook-logo"
-        src="/images/facebook.png"
-        alt="Logo Facebook"
-      /></a>
       </div>
-               
-                   
+
+      <div class="footer__facebook">
+        <h3 class="footer__headline3">Najdete nás na Facebooku</h3>
+
+        <a
+          href="https://www.facebook.com/Vinn%C3%BD-sklep-a-penzion-U-Vinohradu-205435942830300"
+          ><img
+            class="footer__facebook-logo"
+            src="/images/facebook.png"
+            alt="Logo Facebook"
+        /></a>
+      </div>
     </footer>
     <div class="footer__copyright">
-        <p>
-        ©2021, Vinný sklep a penzion U Vinohradu
-        </p>
-        </div>
+      <p>©2021, Vinný sklep a penzion U Vinohradu</p>
+    </div>
   </body>
 </html>

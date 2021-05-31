@@ -1,8 +1,9 @@
 @use 'colors';
 @use 'base';
 
-//Header kontakty pro mobil, tablet i PC
+//Header
 
+//Kontakty - telefon, e-mail
 .header__contact {
   background-color: colors.$color-primary;
   color: colors.$color-white;
@@ -39,46 +40,50 @@
   text-decoration: underline;
 }
 
-//Header logo pro mobil, tablet i PC
-
+//Logo - text, odkaz, ikona
+//Logo text
 .header__logo-text {
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
-  margin: 15px 15px 0 0;
+  padding: 15px 15px 15px 0;
   background-color: colors.$color-white;
+  font-weight: bold;
 
   @media screen and (min-width: 540px) {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 25px;
+    font-size: 24px;
   }
 }
 
+//Logo odkaz
 .header__logo-link {
   text-decoration: none;
   color: colors.$color-black;
   display: flex;
+  align-items: center;
 }
 
+//Logo ikona
 .header__logo-image {
   width: 50px;
   height: 50px;
-  margin: 15px 15px 15px 30px;
+  margin: 15px;
 
   @media screen and (min-width: 540px) {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   }
 
   @media screen and (min-width: 960px) {
-    width: 75px;
-    height: 75px;
-    margin-right: 15px;
+    width: 60px;
+    height: 60px;
   }
 }
 
+//Bílé pozadí lišty menu
 .header__menu {
   background-color: colors.$color-white;
 }

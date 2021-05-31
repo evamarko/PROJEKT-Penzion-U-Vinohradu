@@ -1,8 +1,9 @@
 @use 'colors';
 @use 'base';
 
-//Footer pro mobil, tablet a PC
+//Footer
 
+//Footer padding, font-size, barvy
 .footer {
   color: colors.$color-white;
   background-color: colors.$color-primary;
@@ -24,6 +25,7 @@
   }
 }
 
+//Adresa a kontakty
 .footer__address,
 .footer__contact {
   margin-bottom: 40px;
@@ -34,20 +36,33 @@
   }
 }
 
-.footer__contact-email {
+//E-mail odkaz
+.footer__email-link {
   color: colors.$color-white;
   text-decoration: none;
 }
 
-.footer__contact-email:hover,
-.footer__contact-email:focus,
-.footer__contact-email:active {
+.footer__email-link:hover,
+.footer__email-link:focus,
+.footer__email-link:active {
   text-decoration: underline;
 }
 
+//Facebook logo
+.footer__facebook-logo {
+  width: 40px;
 
-//Footer copyright
+  @media screen and (min-width: 540px) {
+    width: 45px;
+  }
 
+  @media screen and (min-width: 960px) {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+//Copyright
 .footer__copyright {
   text-align: center;
   font-size: 14px;
@@ -60,20 +75,3 @@
     font-size: base.$body-text;
   }
 }
-
-// Footer Facebook
-
-.footer__facebook-logo {
-  width: 40px;
-  
-
-  @media screen and (min-width: 540px) {
-    width: 45px;
-  }
-
-  @media screen and (min-width: 960px) {
-    margin: 0 auto;
-    display: block;
-  }
-}
-

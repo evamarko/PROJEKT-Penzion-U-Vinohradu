@@ -3,7 +3,8 @@
 
 //Stránka Degustace
 
-.tasting1 {
+//Padding
+.tasting {
   padding: base.$spacer;
 
   @media screen and (min-width: 540px) {
@@ -11,15 +12,17 @@
   }
 
   @media screen and (min-width: 960px) {
-    padding: 200px 90px 90px 90px;
+    padding: 90px;
+    padding-top: 200px;
   }
 }
 
+//Bílé pozadí
 .tasting2 {
   background-color: colors.$color-white;
 }
 
-
+//Rámeček a padding pro menu
 .tasting2__content {
   padding: base.$spacer;
 
@@ -29,14 +32,10 @@
   }
 }
 
-
-
-
-
 //Obrázky
 .tasting2__image {
   @media screen and (min-width: 540px) {
-    margin: base.$spacer 0 60px 0;
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 960px) {
@@ -44,26 +43,49 @@
   }
 }
 
-//Flexbox
-.tasting2__flexbox{
-    @media screen and (min-width: 960px) {
-     display: flex;
-     flex-direction: row-reverse;
-    }
+.tasting2__image--margin-bottom {
+  @media screen and (min-width: 540px) {
+    margin: 0;
   }
+}
 
-  .tasting2__flexbox-item {
-    @media screen and (min-width: 960px) {
-       flex: 0 0 40%;
-       margin: 0 base.$spacer base.$spacer 0;
-    }
+//Flexbox, obrázky a menu
+.tasting2__flexbox {
+  @media screen and (min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
   }
+}
 
-  .tasting2__content {
-    @media screen and (min-width: 960px) {
-        flex: 0 0 60%;
-        margin-bottom: base.$spacer;
-    }
+.tasting2__flexbox--reverse {
+  @media screen and (min-width: 960px) {
+    flex-direction: row-reverse;
   }
+}
 
+.tasting2__flexbox-item {
+  @media screen and (min-width: 960px) {
+    flex: 0 0 40%;
+  }
+}
 
+.tasting2__content {
+  @media screen and (min-width: 960px) {
+    flex: 0 0 55%;
+    margin-bottom: 60px;
+  }
+}
+
+.tasting2__flexbox-item--padding-bottom {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 540px) {
+    padding-bottom: 0;
+  }
+}
+
+.tasting2__content--margin-bottom {
+  @media screen and (min-width: 960px) {
+    margin: 0;
+  }
+}

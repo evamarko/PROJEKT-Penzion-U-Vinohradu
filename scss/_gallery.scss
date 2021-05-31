@@ -1,19 +1,24 @@
 @use 'colors';
 @use 'base';
 
-//Stránka Galerie pro mobil, tablet i PC
+//Stránka Galerie
 
+//Paddingy
 .gallery {
   @media screen and (min-width: 960px) {
     padding-top: 200px;
   }
 }
 
-  
+.gallery__image--padding-bottom {
+  padding-bottom: 60px;
 
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+}
 
-
-//Galerie h1
+//Nadpis
 .gallery__headline {
   padding: base.$spacer 0 0 base.$spacer;
 
@@ -22,11 +27,10 @@
   }
 }
 
-// Galerie grid pro PC
-
+//Grid pro PC
 @media screen and (min-width: 960px) {
   .gallery__grid {
-    margin-top: 50px;  
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
