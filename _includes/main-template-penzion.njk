@@ -43,19 +43,39 @@
 
           <ul class="menu__list">
             <li class="menu__item menu__item--border-top">
-              <a class="menu__link" href="/vybaveni/">Vybavení</a>
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'vybaveni' }}"
+                href="/vybaveni/"
+                >Vybavení</a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/ubytovani/">Ubytování</a>
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'ubytovani' }}"
+                href="/ubytovani/"
+                >Ubytování</a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/degustace/">Degustace</a>
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'degustace' }}"
+                href="/degustace/"
+                >Degustace</a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/galerie/">Galerie</a>
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'galerie' }}"
+                href="/galerie/"
+                >Galerie</a
+              >
             </li>
             <li class="menu__item menu__item--border-right">
-              <a class="menu__link" href="/kontakt/">Kontakt</a>
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt' }}"
+                href="/kontakt/"
+                >Kontakt</a
+              >
             </li>
           </ul>
         </nav>

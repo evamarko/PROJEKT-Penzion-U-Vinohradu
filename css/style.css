@@ -290,6 +290,11 @@ h3 {
     right: 0;
   }
 }
+.menu__link--active {
+  color: #f8f8f8;
+  background-color: #355e3b;
+}
+
 .header__image {
   background: url(./../images/header.jpg) no-repeat center/cover;
   height: 300px;

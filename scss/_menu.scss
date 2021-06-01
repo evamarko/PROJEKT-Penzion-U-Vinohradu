@@ -113,3 +113,8 @@
   }
 }
 
+//Aktivní menu
+.menu__link--active {
+  color: colors.$color-white;
+  background-color: colors.$color-primary;
+}
