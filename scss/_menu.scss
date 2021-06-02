@@ -1,13 +1,9 @@
 @use 'colors';
 @use 'base';
 
-//Header hamburger menu pro mobil a tablet a upravené menu pro PC
+//Menu
 
-.menu__checkbox {
-  position: absolute;
-  left: -9999px;
-}
-
+//Menu pro mobil, tablet, PC
 .menu__list {
   display: none;
   list-style: none;
@@ -19,15 +15,14 @@
   }
 
   @media screen and (min-width: 960px) {
-    margin-right: base.$spacer;
+    margin-right: 15px;
   }
 }
 
-//Header menu toggler
-
+//Toggler, hamburger menu
 .menu__toggler {
   font-size: 18px;
-  padding: 15px base.$spacer;
+  padding: 0 30px 10px 15px;
   display: block;
   cursor: pointer;
   background-color: colors.$color-white;
@@ -37,20 +32,28 @@
   }
 }
 
-//Header menu položky a jejich borders
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
 
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+//Položky menu a jejich borders
 .menu__item {
-  border-bottom: 1.5px solid colors.$color-grey;
+  border-bottom: 2px solid colors.$color-grey;
 
   @media screen and (min-width: 540px) {
     border: none;
     flex: 1 1 100%;
-    border-right: 1.5px solid colors.$color-grey;
+    border-right: 2px solid colors.$color-grey;
   }
 }
 
 .menu__item--border-top {
-  border-top: 1.5px solid colors.$color-grey;
+  border-top: 2px solid colors.$color-grey;
 
   @media screen and (min-width: 540px) {
     border-top: none;
@@ -61,8 +64,7 @@
   border: none;
 }
 
-//Header menu odkazy
-
+//Odkazy
 .menu__link {
   display: block;
   padding: 15px;
@@ -79,10 +81,10 @@
   @media screen and (min-width: 960px) {
     font-size: 18px;
     padding: 10px 15px;
-    background-color: colors.$color-white;
   }
 }
 
+//Odkazy aktivní
 .menu__link:hover,
 .menu__link:active,
 .menu__link:focus {
@@ -90,26 +92,18 @@
   background-color: colors.$color-primary;
 }
 
-.menu__checkbox:checked ~ .menu__list {
-  display: block;
-}
-
-//Menu specifikace pro PC
-
-.header__menu {
-  @media screen and (min-width: 960px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-//Fixní menu pro PC
+//Menu specifikace pro PC, fixní menu
 @media screen and (min-width: 960px) {
   .header {
     position: fixed;
     left: 0;
     right: 0;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

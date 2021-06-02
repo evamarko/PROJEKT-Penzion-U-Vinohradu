@@ -81,7 +81,7 @@
 }
 
 //Formulář červená hvězdička
-.contact__form-label:after {
+.contact__form-label-required:after {
   content: "*";
   color: red;
   margin-left: 4px;
