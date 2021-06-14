@@ -120,7 +120,7 @@ h3 {
 
 .header__contact-phone,
 .header__contact-email {
-  padding: 10px 30px;
+  padding: 7px 30px;
   margin: 0;
   color: #f8f8f8;
   display: block;
@@ -128,6 +128,12 @@ h3 {
 
 .header__contact-email {
   text-decoration: none;
+  padding-top: 0;
+}
+@media screen and (min-width: 540px) {
+  .header__contact-email {
+    padding-top: 7px;
+  }
 }
 
 .header__contact-email:hover,
@@ -164,13 +170,7 @@ h3 {
 .header__logo-image {
   width: 50px;
   height: 50px;
-  margin: 15px;
-}
-@media screen and (min-width: 540px) {
-  .header__logo-image {
-    width: 55px;
-    height: 55px;
-  }
+  margin: 10px;
 }
 @media screen and (min-width: 960px) {
   .header__logo-image {
@@ -202,7 +202,7 @@ h3 {
 
 .menu__toggler {
   font-size: 18px;
-  padding: 0 30px 10px 15px;
+  padding: 0 30px 10px 30px;
   display: block;
   cursor: pointer;
   background-color: #f8f8f8;
@@ -278,6 +278,7 @@ h3 {
     position: fixed;
     left: 0;
     right: 0;
+    box-shadow: 0 8px 6px -6px #355e3b;
   }
 
   .header__menu {
@@ -888,75 +889,109 @@ td {
 .footer {
   color: #f8f8f8;
   background-color: #355e3b;
-  padding: 30px;
-  font-size: 14px;
+  padding: 10px 30px;
+  font-size: 13px;
 }
 @media screen and (min-width: 540px) {
   .footer {
     display: flex;
-    font-size: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+    font-size: 14px;
+    padding: 15px 60px;
     margin: 0;
   }
 }
 @media screen and (min-width: 960px) {
   .footer {
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 90px;
     padding-right: 90px;
   }
 }
 
-.footer__address,
 .footer__contact {
   margin-bottom: 40px;
 }
 @media screen and (min-width: 540px) {
-  .footer__address,
-.footer__contact {
-    margin-right: 40px;
+  .footer__contact {
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .footer__contact {
+    margin-right: 90px;
     margin-bottom: 0;
   }
 }
 
-.footer__email-link {
+.footer__email {
   color: #f8f8f8;
   text-decoration: none;
 }
 
-.footer__email-link:hover,
-.footer__email-link:focus,
-.footer__email-link:active {
+.footer__email:hover,
+.footer__email:focus,
+.footer__email:active {
   text-decoration: underline;
 }
 
-.footer__facebook-logo {
-  width: 40px;
+.footer__facebook {
+  width: 35px;
+  display: block;
+  margin-top: 15px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 15px;
+}
+
+.footer__list-link {
+  color: #f8f8f8;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
 }
 @media screen and (min-width: 540px) {
-  .footer__facebook-logo {
-    width: 45px;
+  .footer__list-link {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 960px) {
-  .footer__facebook-logo {
-    margin: 0 auto;
-    display: block;
+  .footer__list-link {
+    font-size: 17px;
   }
+}
+
+.footer__list-link:hover,
+.footer__list-link:focus,
+.footer__list-link:active {
+  text-decoration: underline;
+}
+
+.footer__list-link--active {
+  text-decoration: underline;
 }
 
 .footer__copyright {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 @media screen and (min-width: 540px) {
   .footer__copyright {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 960px) {
   .footer__copyright {
-    font-size: 16px;
+    font-size: 15px;
   }
+}
+
+.footer__copyright-text {
+  margin: 7px;
 }/*# sourceMappingURL=style.css.map */

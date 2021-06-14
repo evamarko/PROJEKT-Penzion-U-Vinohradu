@@ -7,71 +7,106 @@
 .footer {
   color: colors.$color-white;
   background-color: colors.$color-primary;
-  padding: base.$spacer;
-  font-size: 14px;
+  padding: 10px base.$spacer;
+  font-size: 13px;
 
   @media screen and (min-width: 540px) {
     display: flex;
-    font-size: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+    font-size: 14px;
+    padding: 15px 60px;
     margin: 0;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: base.$body-text;
+    font-size: 15px;
     padding-left: 90px;
     padding-right: 90px;
   }
 }
 
-//Adresa a kontakty
-.footer__address,
+//Kontakty
 .footer__contact {
   margin-bottom: 40px;
 
   @media screen and (min-width: 540px) {
-    margin-right: 40px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin-right: 90px;
     margin-bottom: 0;
   }
 }
 
 //E-mail odkaz
-.footer__email-link {
+.footer__email {
   color: colors.$color-white;
   text-decoration: none;
 }
 
-.footer__email-link:hover,
-.footer__email-link:focus,
-.footer__email-link:active {
+.footer__email:hover,
+.footer__email:focus,
+.footer__email:active {
   text-decoration: underline;
 }
 
-//Facebook logo
-.footer__facebook-logo {
-  width: 40px;
+//Ikona Facebook
+.footer__facebook {
+  width: 35px;
+  display: block;
+  margin-top: 15px;
+}
+
+//Footer menu
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__list-item {
+  margin-bottom: 15px;
+}
+
+.footer__list-link {
+  color: colors.$color-white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
 
   @media screen and (min-width: 540px) {
-    width: 45px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 960px) {
-    margin: 0 auto;
-    display: block;
+    font-size: 17px;
   }
+}
+
+.footer__list-link:hover,
+.footer__list-link:focus,
+.footer__list-link:active {
+  text-decoration: underline;
+}
+
+.footer__list-link--active {
+  text-decoration: underline;
 }
 
 //Copyright
 .footer__copyright {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
 
   @media screen and (min-width: 540px) {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: base.$body-text;
+    font-size: 15px;
   }
+}
+
+.footer__copyright-text {
+  margin: 7px;
 }

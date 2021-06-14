@@ -22,7 +22,7 @@
 //Toggler, hamburger menu
 .menu__toggler {
   font-size: 18px;
-  padding: 0 30px 10px 15px;
+  padding: 0 30px 10px 30px;
   display: block;
   cursor: pointer;
   background-color: colors.$color-white;
@@ -97,6 +97,7 @@
     position: fixed;
     left: 0;
     right: 0;
+    box-shadow: 0 8px 6px -6px colors.$color-primary;
   }
 
   .header__menu {
