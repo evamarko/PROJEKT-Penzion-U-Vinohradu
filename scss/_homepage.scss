@@ -45,13 +45,11 @@
 }
 
 //Mapa
-.homepage__map {
+.homepage2__image {
   width: 100%;
-  height: 300px;
   margin-bottom: 60px;
 
   @media screen and (min-width: 540px) {
-    height: 350px;
     margin: base.$spacer 0 0 0;
   }
 
@@ -76,7 +74,7 @@
     padding-left: 50px;
   }
 
-  .homepage__content-map {
+  .homepage2__content-image {
     flex: 0 0 50%;
   }
 }
@@ -95,4 +93,10 @@
 //Bílé pozadí
 .homepage2 {
   background-color: colors.$color-white;
+}
+
+.homepage {
+  @media screen and (min-width: 960px) {
+    padding-top: 200px;
+  }
 }
