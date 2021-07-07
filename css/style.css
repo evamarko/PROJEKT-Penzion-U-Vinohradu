@@ -399,6 +399,14 @@ h3 {
   }
 }
 
+.glide__slide img {
+  width: 100%;
+}
+
+.glide {
+  padding-top: 120px;
+}
+
 @media screen and (min-width: 960px) {
   .facilities {
     padding-top: 200px;
