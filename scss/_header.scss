@@ -45,6 +45,24 @@
   text-decoration: underline;
 }
 
+//Ikony kontakty
+.header__icon-phone {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
+.header__contact-phone,
+.header__contact-email {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon-mail {
+  width: 18px;
+  margin-right: 8px;
+}
+
 //Logo - text, odkaz, ikona
 //Logo text
 .header__logo-text {
