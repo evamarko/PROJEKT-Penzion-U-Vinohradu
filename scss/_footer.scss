@@ -110,3 +110,27 @@
 .footer__copyright-text {
   margin: 7px;
 }
+
+//Ikony kontakty - adresa, telefon, e-mail
+.footer__icon-address {
+  height: 25px;
+  width: 16px;
+  margin-right: 8px;
+}
+
+.footer__icon-phone {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.footer__icon-mail {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.footer__contact-address {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
