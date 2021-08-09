@@ -3,20 +3,6 @@
 
 //Homepage
 
-//Obrázek hlavička, jen na homepage
-.header__image {
-  background: url(./../images/header.jpg) no-repeat center/cover;
-  height: 300px;
-
-  @media screen and (min-width: 540px) {
-    height: 350px;
-  }
-
-  @media screen and (min-width: 960px) {
-    height: 700px;
-  }
-}
-
 //Padding
 .homepage__content-left,
 .homepage2__content-right {

@@ -13,18 +13,16 @@
     display: flex;
     justify-content: flex-end;
     font-size: 15px;
-    padding-right: 30px;
   }
 
   @media screen and (min-width: 960px) {
     font-size: base.$body-text;
-    padding-right: 60px;
   }
 }
 
 .header__contact-phone,
 .header__contact-email {
-  padding: 7px base.$spacer;
+  padding: 6px 15px;
   margin: 0;
   color: colors.$color-white;
   display: block;
@@ -93,11 +91,10 @@
 .header__logo-image {
   width: 50px;
   height: 50px;
-  margin: 10px;
+  margin: 8px;
 
   @media screen and (min-width: 960px) {
-    width: 60px;
-    height: 60px;
+    margin-left: 10px;
   }
 }
 

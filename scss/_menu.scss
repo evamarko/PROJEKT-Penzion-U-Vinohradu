@@ -13,16 +13,12 @@
   @media screen and (min-width: 540px) {
     display: flex;
   }
-
-  @media screen and (min-width: 960px) {
-    margin-right: 15px;
-  }
 }
 
 //Toggler, hamburger menu
 .menu__toggler {
   font-size: 18px;
-  padding: 0 30px 10px 30px;
+  padding: 15px;
   display: block;
   cursor: pointer;
   background-color: colors.$color-white;
@@ -50,8 +46,8 @@
     flex: 1 1 100%;
   }
 
-  @media screen and (min-width: 540px) {
-    border: none;
+  @media screen and (min-width: 960px) {
+    flex-basis: auto;
   }
 }
 
@@ -83,7 +79,7 @@
 
   @media screen and (min-width: 960px) {
     font-size: 18px;
-    padding: 20px 30px;
+    padding: 25px 15px;
   }
 }
 
@@ -95,10 +91,9 @@
   background-color: colors.$color-primary;
 }
 
-//Menu specifikace pro PC, fixní menu
+//Menu specifikace pro PC
 @media screen and (min-width: 960px) {
   .header {
-    //position: fixed;
     left: 0;
     right: 0;
     box-shadow: 0 8px 6px -6px colors.$color-primary;
@@ -106,8 +101,8 @@
 
   .header__menu {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -119,6 +114,6 @@
   @media screen and (min-width: 540px) {
     color: colors.$color-black;
     background-color: colors.$color-white;
-    box-shadow: 0px -3px 0px 0px colors.$color-primary inset;
+    box-shadow: 0px -4px 0px 0px colors.$color-primary inset;
   }
 }

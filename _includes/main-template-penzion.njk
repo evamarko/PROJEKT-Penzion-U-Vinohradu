@@ -74,7 +74,7 @@
             src="/images/logo.png"
             alt="Logo stránky hrozen"
           />
-          <div class="header__logo-text">Vinný sklep - penzion U Vinohradu</div>
+          <div class="header__logo-text">Penzion U Vinohradu</div>
         </a>
 
         <nav class="menu">
@@ -84,7 +84,7 @@
           <ul class="menu__list">
             <li class="menu__item menu__item--border-top">
               <a
-                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'index' }}"
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }}"
                 href="/"
                 >O penzionu</a
               >
@@ -160,7 +160,7 @@
         <ul class="footer__list">
           <li class="footer__list-item">
             <a
-              class="footer__list-link {{ 'footer__list-link--active' if page.fileSlug === 'vybaveni' }}"
+              class="footer__list-link {{ 'footer__list-link--active' if page.fileSlug === '' }}"
               href="/"
               >O penzionu</a
             >
