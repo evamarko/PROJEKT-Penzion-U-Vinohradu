@@ -50,19 +50,19 @@ h2::after {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
   h2 {
-    font-size: 23px;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 960px) {
   h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
@@ -166,12 +166,13 @@ h3 {
 }
 @media screen and (min-width: 540px) {
   .header__logo-text {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
-@media screen and (min-width: 960px) {
-  .header__logo-text {
-    font-size: 24px;
+
+@media screen and (min-width: 540px) {
+  .header__logo-text--break {
+    display: none;
   }
 }
 
@@ -345,7 +346,7 @@ h3 {
 
 .homepage2__image {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
   .homepage2__image {
@@ -395,8 +396,43 @@ h3 {
   width: 100%;
 }
 
-.glide {
-  padding-top: 120px;
+.glide__slides {
+  padding: 0;
+  margin: 0;
+}
+
+.glide__section {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+  display: none;
+}
+@media screen and (min-width: 540px) {
+  .glide__section {
+    display: block;
+  }
+}
+
+.homepage__hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/velke/foto18.jpg);
+  background-color: #f8f8f8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: none;
+}
+@media screen and (min-width: 540px) {
+  .homepage__hero {
+    display: block;
+    height: 250px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .homepage__hero {
+    height: 350px;
+  }
 }
 
 .facilities__content-left,
@@ -412,7 +448,7 @@ h3 {
 @media screen and (min-width: 960px) {
   .facilities__content-left,
 .facilities2__content-left {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
   }
 }
 
@@ -486,7 +522,7 @@ h3 {
 
   .facilities__content-image,
 .facilities2__content-image {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
   }
 }
 .facilities2__link {

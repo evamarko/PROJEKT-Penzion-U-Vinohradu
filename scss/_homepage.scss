@@ -33,7 +33,7 @@
 //Mapa
 .homepage2__image {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
     margin: base.$spacer 0 0 0;
@@ -86,6 +86,40 @@
   width: 100%;
 }
 
-.glide {
-  padding-top: 120px;
+.glide__slides {
+  padding: 0;
+  margin: 0;
+}
+
+.glide__section {
+  padding: 0;
+  margin: 0;
+  background-color: colors.$color-white;
+  display: none;
+
+  @media screen and (min-width: 540px) {
+    display: block;
+  }
+}
+
+//Hero
+.homepage__hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/velke/foto18.jpg);
+  background-color: colors.$color-white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: none;
+
+  @media screen and (min-width: 540px) {
+    display: block;
+    height: 250px;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: 350px;
+  }
 }

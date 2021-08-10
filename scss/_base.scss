@@ -64,17 +64,17 @@ h2::after {
 
 //Nadpisy h2, h2::after specifikace
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   margin: 0;
   padding: 0;
   margin-bottom: $spacer;
 
   @media screen and (min-width: 540px) {
-    font-size: 23px;
+    font-size: 26px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 

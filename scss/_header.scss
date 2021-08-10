@@ -71,11 +71,13 @@
   font-weight: bold;
 
   @media screen and (min-width: 540px) {
-    font-size: 22px;
-  }
-
-  @media screen and (min-width: 960px) {
     font-size: 24px;
+  }
+}
+
+.header__logo-text--break {
+  @media screen and (min-width: 540px) {
+    display: none;
   }
 }
 
