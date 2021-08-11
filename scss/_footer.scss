@@ -7,18 +7,18 @@
 .footer {
   color: colors.$color-white;
   background-color: colors.$color-primary;
-  padding: 10px base.$spacer;
+  padding: base.$spacer;
   font-size: 13px;
 
   @media screen and (min-width: 540px) {
     display: flex;
     font-size: 14px;
-    padding: 15px 60px;
+    padding: base.$spacer 60px;
     margin: 0;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 15px;
+    font-size: 16px;
     padding-left: 90px;
     padding-right: 90px;
   }
@@ -26,16 +26,11 @@
 
 //Kontakty
 .footer__contact {
-  margin-bottom: 40px;
+  margin-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
-    margin-right: 60px;
     margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 960px) {
-    margin-right: 90px;
-    margin-bottom: 0;
+    margin-top: base.$spacer;
   }
 }
 
@@ -62,6 +57,8 @@
 .footer__list {
   list-style: none;
   padding: 0;
+  margin: base.$spacer 0;
+  text-align: center;
 }
 
 .footer__list-item {
@@ -72,15 +69,6 @@
   color: colors.$color-white;
   font-weight: bold;
   text-decoration: none;
-  font-size: 15px;
-
-  @media screen and (min-width: 540px) {
-    font-size: 16px;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 17px;
-  }
 }
 
 .footer__list-link:hover,
@@ -132,5 +120,45 @@
 .footer__contact-address {
   display: flex;
   align-items: center;
-  margin-top: 14px;
+}
+
+//Tipy na výlety seznam
+.footer__headline3 {
+  margin-top: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    margin-top: 0;
+  }
+}
+
+.footer__list2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__list2-item {
+  padding: 5px 0;
+}
+
+.footer__list2-link {
+  color: colors.$color-white;
+  text-decoration: none;
+}
+
+.footer__list2-link:active,
+.footer__list2-link:focus,
+.footer__list2-link:hover {
+  text-decoration: underline;
+}
+
+//Linky
+.footer__line {
+  @media screen and (min-width: 540px) {
+    margin: 0 60px;
+  }
+
+  @media screen and (min-width: 960px) {
+    margin: 0 90px;
+  }
 }
