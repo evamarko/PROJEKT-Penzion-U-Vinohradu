@@ -29,8 +29,7 @@
   margin-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
-    margin-bottom: 0;
-    margin-top: base.$spacer;
+    margin: 0;
   }
 }
 
@@ -58,7 +57,10 @@
   list-style: none;
   padding: 0;
   margin: base.$spacer 0;
-  text-align: center;
+
+  @media screen and (min-width: 540px) {
+    text-align: center;
+  }
 }
 
 .footer__list-item {
@@ -99,25 +101,23 @@
   margin: 7px;
 }
 
-//Ikony kontakty - adresa, telefon, e-mail
-.footer__icon-address {
-  height: 25px;
-  width: 16px;
-  margin-right: 8px;
+//Ikony kontakty - adresa, telefon, e-mail, facebook
+.footer__icon-address,
+.footer__icon-phone,
+.footer__icon-mail,
+.footer__icon-facebook {
+  width: 20px;
+  margin-right: 10px;
 }
 
-.footer__icon-phone {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
+.footer__icon-facebook {
+  width: 20px;
 }
 
-.footer__icon-mail {
-  width: 18px;
-  margin-right: 8px;
-}
-
-.footer__contact-address {
+.footer__contact-address,
+.footer__contact-phone,
+.footer__contact-mail,
+.footer__contact-facebook {
   display: flex;
   align-items: center;
 }
@@ -155,10 +155,10 @@
 //Linky
 .footer__line {
   @media screen and (min-width: 540px) {
-    margin: 0 60px;
+    margin: 0 30px;
   }
 
   @media screen and (min-width: 960px) {
-    margin: 0 90px;
+    margin: 0 45px;
   }
 }
