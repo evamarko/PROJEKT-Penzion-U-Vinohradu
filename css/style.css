@@ -537,18 +537,21 @@ h3 {
 
 .accommodation__contain,
 .accommodation2__contain,
-.accommodation3__contain {
+.accommodation3__contain,
+.accommodation4__contain {
   padding: 30px;
 }
 @media screen and (min-width: 540px) {
   .accommodation__contain,
 .accommodation2__contain,
-.accommodation3__contain {
+.accommodation3__contain,
+.accommodation4__contain {
     padding: 0;
   }
 }
 
-.accommodation2 {
+.accommodation2,
+.accommodation4 {
   background-color: #f8f8f8;
 }
 
