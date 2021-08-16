@@ -21,7 +21,7 @@
   background-color: colors.$color-white;
 }
 
-//Flexbox, ikony
+//Ikony - flexbox
 .accommodation__icon {
   width: 50px;
   height: 50px;
@@ -46,26 +46,34 @@
   }
 }
 
+//Pokoje - grid
+.accommodation2__grid {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+    gap: base.$spacer;
+  }
+}
+
 //Flexbox, pokoje
 .accommodation2__flexbox {
   @media screen and (min-width: 540px) {
     display: flex;
-    flex-direction: row-reverse;
   }
 }
 
 .accommodation2__flexbox-item {
   @media screen and (min-width: 540px) {
-    flex: 0 0 60%;
-    padding-left: base.$spacer;
+    flex: 0 0 50%;
+    padding-right: base.$spacer;
   }
 }
 
-.accommodation2__flexbox-image {
+.accommodation2__image {
   padding-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
-    flex: 0 0 40%;
     margin: 0;
   }
 }
@@ -106,8 +114,6 @@ td {
 }
 
 .accommodation3__flexbox-item {
-  padding-bottom: 60px;
-
   @media screen and (min-width: 540px) {
     margin-top: 60px;
     padding-bottom: 0;

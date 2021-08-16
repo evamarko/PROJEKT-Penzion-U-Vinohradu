@@ -580,25 +580,32 @@ h3 {
 }
 
 @media screen and (min-width: 540px) {
+  .accommodation2__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 540px) {
   .accommodation2__flexbox {
     display: flex;
-    flex-direction: row-reverse;
   }
 }
 
 @media screen and (min-width: 540px) {
   .accommodation2__flexbox-item {
-    flex: 0 0 60%;
-    padding-left: 30px;
+    flex: 0 0 50%;
+    padding-right: 30px;
   }
 }
 
-.accommodation2__flexbox-image {
+.accommodation2__image {
   padding-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
-  .accommodation2__flexbox-image {
-    flex: 0 0 40%;
+  .accommodation2__image {
     margin: 0;
   }
 }
@@ -636,9 +643,6 @@ td {
   }
 }
 
-.accommodation3__flexbox-item {
-  padding-bottom: 60px;
-}
 @media screen and (min-width: 540px) {
   .accommodation3__flexbox-item {
     margin-top: 60px;
