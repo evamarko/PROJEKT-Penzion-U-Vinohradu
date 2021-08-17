@@ -88,3 +88,38 @@
     margin: 0;
   }
 }
+
+.tasting__wines {
+  color: colors.$color-white;
+  background-color: colors.$color-primary;
+  text-align: center;
+  padding: base.$spacer;
+  margin-bottom: base.$spacer;
+  border-radius: 20px;
+}
+
+.tasting__grid {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: base.$spacer;
+  }
+
+  @media screen and (min-width: 960px) {
+    gap: 100px;
+  }
+}
+
+.tasting__wines {
+  @media screen and (min-width: 540px) {
+    margin-top: base.$spacer;
+  }
+}
+
+.tasting2__price {
+  color: colors.$color-white;
+  background-color: colors.$color-primary;
+  text-align: center;
+  padding: 8px;
+}

@@ -580,42 +580,49 @@ h3 {
 }
 
 @media screen and (min-width: 540px) {
-  .accommodation2__grid {
+  .accommodation2__grid,
+.accommodation3__grid {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
   }
 }
-
-@media screen and (min-width: 540px) {
-  .accommodation2__flexbox {
-    display: flex;
+@media screen and (min-width: 960px) {
+  .accommodation2__grid,
+.accommodation3__grid {
+    gap: 60px;
   }
 }
 
 @media screen and (min-width: 540px) {
-  .accommodation2__flexbox-item {
-    flex: 0 0 50%;
-    padding-right: 30px;
+  .accommodation2__grid-item3,
+.accommodation3__grid-item3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
-.accommodation2__image {
+@media screen and (min-width: 540px) {
+  .accommodation2__grid-item4,
+.accommodation3__grid-item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+
+.accommodation2__image,
+.accommodation3__image {
   padding-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
-  .accommodation2__image {
-    margin: 0;
+  .accommodation2__image,
+.accommodation3__image {
+    padding: 0;
   }
 }
 
-@media screen and (min-width: 540px) {
-  .accommodation2__flexbox--margin-top {
-    margin-top: 60px;
-  }
-}
-
+.accommodation2__table,
 .accommodation3__table {
   text-align: center;
   border-spacing: 0;
@@ -740,6 +747,42 @@ td {
   .tasting2__content--margin-bottom {
     margin: 0;
   }
+}
+
+.tasting__wines {
+  color: #f8f8f8;
+  background-color: #355e3b;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 540px) {
+  .tasting__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tasting__grid {
+    gap: 100px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .tasting__wines {
+    margin-top: 30px;
+  }
+}
+
+.tasting2__price {
+  color: #f8f8f8;
+  background-color: #355e3b;
+  text-align: center;
+  padding: 8px;
 }
 
 .gallery__image--padding-bottom {

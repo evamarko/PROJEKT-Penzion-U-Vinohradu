@@ -46,45 +46,49 @@
   }
 }
 
-//Pokoje - grid
-.accommodation2__grid {
+//Pokoje, apartmány - grid
+.accommodation2__grid,
+.accommodation3__grid {
   @media screen and (min-width: 540px) {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: base.$spacer;
   }
-}
 
-//Flexbox, pokoje
-.accommodation2__flexbox {
-  @media screen and (min-width: 540px) {
-    display: flex;
+  @media screen and (min-width: 960px) {
+    gap: 60px;
   }
 }
 
-.accommodation2__flexbox-item {
+.accommodation2__grid-item3,
+.accommodation3__grid-item3 {
   @media screen and (min-width: 540px) {
-    flex: 0 0 50%;
-    padding-right: base.$spacer;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 }
 
-.accommodation2__image {
+.accommodation2__grid-item4,
+.accommodation3__grid-item4 {
+  @media screen and (min-width: 540px) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.accommodation2__image,
+.accommodation3__image {
   padding-bottom: base.$spacer;
 
   @media screen and (min-width: 540px) {
-    margin: 0;
-  }
-}
-
-.accommodation2__flexbox--margin-top {
-  @media screen and (min-width: 540px) {
-    margin-top: 60px;
+    //margin: 0;
+    padding: 0;
   }
 }
 
 //Tabulka ceník ubytování
+.accommodation2__table,
 .accommodation3__table {
   text-align: center;
   border-spacing: 0;
