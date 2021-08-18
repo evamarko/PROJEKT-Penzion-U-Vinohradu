@@ -35,6 +35,8 @@
 .tasting2__image {
   @media screen and (min-width: 540px) {
     margin-bottom: 60px;
+    height: 100%;
+    object-fit: cover;
   }
 
   @media screen and (min-width: 960px) {
@@ -52,7 +54,8 @@
 .tasting2__flexbox {
   @media screen and (min-width: 960px) {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    align-items: stretch;
   }
 }
 
@@ -64,14 +67,14 @@
 
 .tasting2__flexbox-item {
   @media screen and (min-width: 960px) {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
   }
 }
 
 .tasting2__content {
   @media screen and (min-width: 960px) {
-    flex: 0 0 55%;
-    margin-bottom: 60px;
+    //flex: 0 0 55%;
+    //margin-bottom: 60px;
   }
 }
 
@@ -90,12 +93,12 @@
 }
 
 .tasting__wines {
-  color: colors.$color-white;
-  background-color: colors.$color-primary;
   text-align: center;
   padding: base.$spacer;
   margin-bottom: base.$spacer;
   border-radius: 20px;
+  border: solid 3px colors.$color-primary;
+  max-width: 300px;
 }
 
 .tasting__grid {
@@ -104,10 +107,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: base.$spacer;
-  }
-
-  @media screen and (min-width: 960px) {
-    gap: 100px;
+    align-items: start;
+    justify-content: space-between;
   }
 }
 
@@ -122,4 +123,26 @@
   background-color: colors.$color-primary;
   text-align: center;
   padding: 8px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+//Ikony
+.tasting__icon {
+  width: 50px;
+}
+
+//Seznam vín
+.tasting__list {
+  list-style: none;
+  padding: 0;
+}
+
+.tasting2__content-flexbox {
+  @media screen and (min-width: 540px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -15,6 +15,14 @@
   }
 }
 
+.accommodation4__contain {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 540px) {
+    padding: 0;
+  }
+}
+
 //Bílé pozadí
 .accommodation2,
 .accommodation4 {
