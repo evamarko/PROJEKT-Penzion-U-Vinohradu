@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/glide.core.min.css" />
+    <link rel="stylesheet" href="/css/glide.theme.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__contact">
+        <div class="header__contact-phone">
+          <img
+            class="header__icon-phone"
+            src="/images/phone.png"
+            alt="Ikona telefon"
+          />
+          <div>+ 420 723 918 464 (8-19 hod.)</div>
+        </div>
+
+        <a class="header__contact-mail" href="mailto:info@penzionuvinohradu.cz">
+          <img
+            class="header__icon-mail"
+            src="/images/mail.png"
+            alt="Ikona e-mail"
+          />
+          <div>info@penzionuvinohradu.cz</div></a
+        >
+      </div>
+
+      <div class="header__menu">
+        <a class="header__logo-link" href="/"
+          ><img
+            class="header__logo-image"
+            src="/images/logo.png"
+            alt="Logo stránky hrozen"
+          />
+          <div class="header__logo-text">
+            Penzion <br class="header__logo-text--break" />
+            U Vinohradu
+          </div>
+        </a>
+
+        <nav class="menu">
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+          <ul class="menu__list">
+            <li class="menu__item menu__item--border-top">
+              <a
+                class="menu__link "
+                href="/"
+                >O penzionu</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link "
+                href="/ubytovani/"
+                >Ubytování</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link "
+                href="/degustace/"
+                >Degustace</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link "
+                href="/galerie/"
+                >Galerie</a
+              >
+            </li>
+            <li class="menu__item menu__item--border-right">
+              <a
+                class="menu__link menu__link--active"
+                href="/kontakt/"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      
+<!--Sekce Kontakt-->
+<section class="contact">
+  <h1 class="contact__headline">Kontakt</h1>
+
+  <div class="contact__flexbox">
+    <div class="contact__flexbox-item">
+      <p>
+        <strong>Vinný sklep a penzion U Vinohradu</strong> <br />
+        Púrynky - Pod Panskýma 631<br />
+        691 02 Velké Bílovice<br />
+      </p>
+
+      <p>
+        <strong>Souřadnice:</strong> <br />
+        48°51'42.5"N<br />
+        16°53'29.8"E<br />
+      </p>
+      <p>
+        <strong>Telefon:</strong> +420 723 918 464 <br />
+        Prosím, volejte mezi 8-19 hodinou. <br />
+      </p>
+
+      <p>
+        <strong>E-mail:</strong>
+        <a class="contact__email" href="mailto:info@penzionuvinohradu.cz"
+          >info@penzionuvinohradu.cz</a
+        >
+      </p>
+    </div>
+    <div class="contact__flexbox-item">
+      <h2 class="contact__headline2">Kontaktní formulář</h2>
+
+      <form class="contact__form" action="" method="post">
+        <div class="contact__form-field">
+          <label
+            for="jmeno"
+            class="contact__form-label contact__form-label-required"
+            >Jméno a příjmení</label
+          >
+          <input
+            class="contact__form-input"
+            type="text"
+            name="jmeno"
+            id="jmeno"
+            required
+          />
+        </div>
+
+        <div class="contact__form-field">
+          <label
+            for="email"
+            class="contact__form-label contact__form-label-required"
+            >E-mail</label
+          >
+          <input
+            class="contact__form-input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="contact__form-field">
+          <label for="telefon" class="contact__form-label">Telefon</label>
+          <input
+            class="contact__form-input"
+            type="tel"
+            name="telefon"
+            id="telefon"
+          />
+        </div>
+
+        <div class="contact__form-field">
+          <label
+            for="zprava"
+            class="contact__form-label contact__form-label-required"
+            >Zpráva</label
+          >
+          <textarea
+            class="contact__form-textarea"
+            name="zprava"
+            id="zprava"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button class="contact__form-button" type="submit">
+          Odeslat zprávu
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!--Konec sekce Kontakt-->
+
+<!--Sekce Kontakt 2-->
+<section class="contact2">
+  <div class="contact2__map">
+    <iframe
+      class="contact2__map-window"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85762.88427440978!2d16.8301025929049!3d48.863127499986746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712d67d175905fd%3A0x1e5e00045361839b!2sVinn%C3%BD%20sklep%20a%20Penzion%20U%20Vinohradu!5e0!3m2!1scs!2ssk!4v1620810196822!5m2!1scs!2ssk"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>
+<!--Konec sekce Kontakt 2-->
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-address">
+          <img
+            class="footer__icon-address"
+            src="/images/address.png"
+            alt="Ikona adresa"
+          />
+          <p class="footer__contact-address--no-margin">
+            Púrynky - Pod Panskýma 631,<br />
+            691 02 Velké Bílovice
+          </p>
+        </div>
+        <div class="footer__contact-phone">
+          <img
+            class="footer__icon-phone"
+            src="/images/phone.png"
+            alt="Ikona telefon"
+          />
+          <p>+420 723 918 464 (8-19 hod.)</p>
+        </div>
+        <div class="footer__contact-mail">
+          <img
+            class="footer__icon-mail"
+            src="/images/mail.png"
+            alt="Ikona e-mail"
+          />
+          <p>
+            <a class="footer__email" href="mailto:info@penzionuvinohradu.cz">
+              info@penzionuvinohradu.cz</a
+            >
+          </p>
+        </div>
+        <div class="footer__contact-facebook">
+          <img
+            class="footer__icon-facebook"
+            src="/images/facebook.png"
+            alt="Ikona facebook"
+          />
+          <p>
+            <a
+              class="footer__facebook-link"
+              href="https://www.facebook.com/Vinn%C3%BD-sklep-a-penzion-U-Vinohradu-205435942830300/"
+            >
+              Vinný sklep a penzion U Vinohradu</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <hr class="footer__line" />
+
+      <div class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/"
+              >O penzionu</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/ubytovani/"
+              >Ubytování</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/degustace/"
+              >Degustace</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/galerie/"
+              >Galerie</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link footer__list-link--active"
+              href="/kontakt/"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <hr class="footer__line" />
+
+      <div class="footer__tips">
+        <h3 class="footer__headline3">Tipy na výlety</h3>
+
+        <ul class="footer__list2">
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.velkebilovice.cz/"
+              >Velké Bílovice</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/aktivity/pamatky-a-priroda-lednicko-valtickeho-arealu"
+              >Lednicko-valtický areál</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.sonnentor.com/cs-cz"
+              >Sonnentor Čejkovice</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/aktivity/chranena-krajinna-oblast-palava"
+              >CHKO Pálava</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/kam-pojedete/jizni-morava/palava-a-lednicko-valticky-areal/mikulov"
+              >Město Mikulov</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.nechory.cz/"
+              >Vinné sklepy Nechory</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">
+        ©2021, Vinný sklep a penzion U Vinohradu
+      </p>
+    </div>
+    <script src="/js/fslightbox.js"></script>
+  </body>
+</html>

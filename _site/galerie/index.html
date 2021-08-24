@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/glide.core.min.css" />
+    <link rel="stylesheet" href="/css/glide.theme.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__contact">
+        <div class="header__contact-phone">
+          <img
+            class="header__icon-phone"
+            src="/images/phone.png"
+            alt="Ikona telefon"
+          />
+          <div>+ 420 723 918 464 (8-19 hod.)</div>
+        </div>
+
+        <a class="header__contact-mail" href="mailto:info@penzionuvinohradu.cz">
+          <img
+            class="header__icon-mail"
+            src="/images/mail.png"
+            alt="Ikona e-mail"
+          />
+          <div>info@penzionuvinohradu.cz</div></a
+        >
+      </div>
+
+      <div class="header__menu">
+        <a class="header__logo-link" href="/"
+          ><img
+            class="header__logo-image"
+            src="/images/logo.png"
+            alt="Logo stránky hrozen"
+          />
+          <div class="header__logo-text">
+            Penzion <br class="header__logo-text--break" />
+            U Vinohradu
+          </div>
+        </a>
+
+        <nav class="menu">
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+
+          <ul class="menu__list">
+            <li class="menu__item menu__item--border-top">
+              <a
+                class="menu__link "
+                href="/"
+                >O penzionu</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link "
+                href="/ubytovani/"
+                >Ubytování</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link "
+                href="/degustace/"
+                >Degustace</a
+              >
+            </li>
+            <li class="menu__item">
+              <a
+                class="menu__link menu__link--active"
+                href="/galerie/"
+                >Galerie</a
+              >
+            </li>
+            <li class="menu__item menu__item--border-right">
+              <a
+                class="menu__link "
+                href="/kontakt/"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      
+<!--Sekce Galerie-->
+<section class="gallery">
+  <h1 class="gallery__headline">Galerie</h1>
+
+  <div class="gallery__grid">
+    <a data-fslightbox href="/images/velke/foto1.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto1.jpg"
+        alt="Vinný sklep a penzion U Vinohradu 1"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto2.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto2.jpg"
+        alt="Vinný sklep a penzion U Vinohradu 2"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto3.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto3.jpg"
+        alt="Vinný sklep a penzion U Vinohradu 3"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--grid"
+      href="/images/velke/foto4.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto4.jpg"
+        alt="Panorama venkovní areál penzionu"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto5.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto5.jpg"
+        alt="Pokoj postele 1"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto6.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto6.jpg"
+        alt="Pokoj postele 2"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--shower"
+      href="/images/velke/foto7.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto7.jpg"
+        alt="Pokoj sprchový kout"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto8.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto8.jpg"
+        alt="Pokoj postele 3"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto9.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto9.jpg"
+        alt="Pokoj postele 4"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--shower2"
+      href="/images/velke/foto10.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto10.jpg"
+        alt="Apartmán sprchový kout"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto11.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto11.jpg"
+        alt="Apartmán postele"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto12.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto12.jpg"
+        alt="Apartmán stůl"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto13.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto13.jpg"
+        alt="Apartmán kuchyně"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto14.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto14.jpg"
+        alt="Apartmán gauč"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto15.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto15.jpg"
+        alt="Vnitřní prostory a krojovaný pár"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto16.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto16.jpg"
+        alt="Vnitřní prostory posezení"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto17.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto17.jpg"
+        alt="Vinný sklep a krojovaný pár"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto18.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto18.jpg"
+        alt="Vinný sklep"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto19.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto19.jpg"
+        alt="Bečka a krojovaný pár"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto20.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto20.jpg"
+        alt="Vinný sklep a lahve vína"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--grid"
+      href="/images/velke/foto21.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto21.jpg"
+        alt="Panorama vnitřní prostory penzionu"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto22.jpg">
+      <img class="gallery__image" src="/images/male/foto22.jpg" alt="Kolárka"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto23.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto23.jpg"
+        alt="Pergola akce"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto24.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto24.jpg"
+        alt="Venkovní krb s udírnou"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--grid"
+      href="/images/velke/foto25.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto25.jpg"
+        alt="Panorama pergola s venkovním posezením"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto26.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto26.jpg"
+        alt="Dětské hřiště"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto27.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto27.jpg"
+        alt="Sportovní hřiště"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto28.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto28.jpg"
+        alt="Herna interiér"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--grid"
+      href="/images/velke/foto29.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto29.jpg"
+        alt="Panorama sportovní hřiště"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto30.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto30.jpg"
+        alt="Hradištěk Velké Bílovice"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto31.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto31.jpg"
+        alt="Sklepy Velké Bílovice"
+    /></a>
+
+    <a data-fslightbox href="/images/velke/foto32.jpg">
+      <img
+        class="gallery__image"
+        src="/images/male/foto32.jpg"
+        alt="Sklepy a kostel Velké Bílovice"
+    /></a>
+
+    <a
+      data-fslightbox
+      class="gallery__image--grid gallery__image--padding-bottom"
+      href="/images/velke/foto33.jpg"
+    >
+      <img
+        class="gallery__image"
+        src="/images/male/foto33.jpg"
+        alt="Panorama boží muka Velké Bílovice"
+    /></a>
+  </div>
+</section>
+<!--Konec sekce Galerie-->
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-address">
+          <img
+            class="footer__icon-address"
+            src="/images/address.png"
+            alt="Ikona adresa"
+          />
+          <p class="footer__contact-address--no-margin">
+            Púrynky - Pod Panskýma 631,<br />
+            691 02 Velké Bílovice
+          </p>
+        </div>
+        <div class="footer__contact-phone">
+          <img
+            class="footer__icon-phone"
+            src="/images/phone.png"
+            alt="Ikona telefon"
+          />
+          <p>+420 723 918 464 (8-19 hod.)</p>
+        </div>
+        <div class="footer__contact-mail">
+          <img
+            class="footer__icon-mail"
+            src="/images/mail.png"
+            alt="Ikona e-mail"
+          />
+          <p>
+            <a class="footer__email" href="mailto:info@penzionuvinohradu.cz">
+              info@penzionuvinohradu.cz</a
+            >
+          </p>
+        </div>
+        <div class="footer__contact-facebook">
+          <img
+            class="footer__icon-facebook"
+            src="/images/facebook.png"
+            alt="Ikona facebook"
+          />
+          <p>
+            <a
+              class="footer__facebook-link"
+              href="https://www.facebook.com/Vinn%C3%BD-sklep-a-penzion-U-Vinohradu-205435942830300/"
+            >
+              Vinný sklep a penzion U Vinohradu</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <hr class="footer__line" />
+
+      <div class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/"
+              >O penzionu</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/ubytovani/"
+              >Ubytování</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/degustace/"
+              >Degustace</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link footer__list-link--active"
+              href="/galerie/"
+              >Galerie</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a
+              class="footer__list-link "
+              href="/kontakt/"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <hr class="footer__line" />
+
+      <div class="footer__tips">
+        <h3 class="footer__headline3">Tipy na výlety</h3>
+
+        <ul class="footer__list2">
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.velkebilovice.cz/"
+              >Velké Bílovice</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/aktivity/pamatky-a-priroda-lednicko-valtickeho-arealu"
+              >Lednicko-valtický areál</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.sonnentor.com/cs-cz"
+              >Sonnentor Čejkovice</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/aktivity/chranena-krajinna-oblast-palava"
+              >CHKO Pálava</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a
+              class="footer__list2-link"
+              href="https://www.kudyznudy.cz/kam-pojedete/jizni-morava/palava-a-lednicko-valticky-areal/mikulov"
+              >Město Mikulov</a
+            >
+          </li>
+          <li class="footer__list2-item">
+            <a class="footer__list2-link" href="https://www.nechory.cz/"
+              >Vinné sklepy Nechory</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">
+        ©2021, Vinný sklep a penzion U Vinohradu
+      </p>
+    </div>
+    <script src="/js/fslightbox.js"></script>
+  </body>
+</html>
