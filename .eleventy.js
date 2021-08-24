@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("favicon");
+  eleventyConfig.addPassthroughCopy("robots");
 
   return {
     // možné formáty šablon
