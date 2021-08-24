@@ -12,7 +12,7 @@ body {
   font-family: "Merriweather", serif;
   font-size: 16px;
   color: #080808;
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -117,26 +117,26 @@ h3 {
 }
 
 .header__contact-phone,
-.header__contact-email {
+.header__contact-mail {
   padding: 6px 15px;
   margin: 0;
   color: #f8f8f8;
   display: block;
 }
 
-.header__contact-email {
+.header__contact-mail {
   text-decoration: none;
   padding-top: 0;
 }
 @media screen and (min-width: 540px) {
-  .header__contact-email {
+  .header__contact-mail {
     padding-top: 7px;
   }
 }
 
-.header__contact-email:hover,
-.header__contact-email:focus,
-.header__contact-email:active {
+.header__contact-mail:hover,
+.header__contact-mail:focus,
+.header__contact-mail:active {
   text-decoration: underline;
 }
 
@@ -147,7 +147,7 @@ h3 {
 }
 
 .header__contact-phone,
-.header__contact-email {
+.header__contact-mail {
   display: flex;
   align-items: center;
 }
@@ -233,7 +233,7 @@ h3 {
 }
 
 .menu__item {
-  border-bottom: 2px solid #E8E8E8;
+  border-bottom: 2px solid #e8e8e8;
 }
 @media screen and (min-width: 540px) {
   .menu__item {
@@ -248,7 +248,7 @@ h3 {
 }
 
 .menu__item--border-top {
-  border-top: 2px solid #E8E8E8;
+  border-top: 2px solid #e8e8e8;
 }
 @media screen and (min-width: 540px) {
   .menu__item--border-top {
@@ -565,8 +565,8 @@ h3 {
 }
 
 .accommodation__icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 30px;
 }
 
@@ -914,6 +914,7 @@ td {
 @media screen and (min-width: 960px) {
   .contact__form {
     width: 80%;
+    margin-top: 30px;
   }
 }
 

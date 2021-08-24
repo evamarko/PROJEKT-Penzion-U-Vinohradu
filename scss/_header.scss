@@ -21,14 +21,14 @@
 }
 
 .header__contact-phone,
-.header__contact-email {
+.header__contact-mail {
   padding: 6px 15px;
   margin: 0;
   color: colors.$color-white;
   display: block;
 }
 
-.header__contact-email {
+.header__contact-mail {
   text-decoration: none;
   padding-top: 0;
 
@@ -37,9 +37,9 @@
   }
 }
 
-.header__contact-email:hover,
-.header__contact-email:focus,
-.header__contact-email:active {
+.header__contact-mail:hover,
+.header__contact-mail:focus,
+.header__contact-mail:active {
   text-decoration: underline;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .header__contact-phone,
-.header__contact-email {
+.header__contact-mail {
   display: flex;
   align-items: center;
 }
