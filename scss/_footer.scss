@@ -34,14 +34,18 @@
 }
 
 //E-mail odkaz
-.footer__email {
+.footer__email,
+.footer__facebook-link {
   color: colors.$color-white;
   text-decoration: none;
 }
 
 .footer__email:hover,
 .footer__email:focus,
-.footer__email:active {
+.footer__email:active,
+.footer__facebook-link:hover,
+.footer__facebook-link:focus,
+.footer__facebook-link:active {
   text-decoration: underline;
 }
 
