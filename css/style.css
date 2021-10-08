@@ -825,7 +825,7 @@ td {
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .gallery__grid {
     margin-top: 50px;
     display: grid;
