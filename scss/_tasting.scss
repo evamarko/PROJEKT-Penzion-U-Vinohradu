@@ -1,5 +1,5 @@
-@use 'colors';
-@use 'base';
+@use "colors";
+@use "base";
 
 //Stránka Degustace
 
@@ -16,6 +16,39 @@
   }
 }
 
+//Flexbox, první část strany
+.tasting__flexbox {
+  @media screen and (min-width: 960px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tasting__flexbox-item {
+  @media screen and (min-width: 960px) {
+    flex: 0 0 60%;
+  }
+}
+
+//Fotka děda
+.tasting__image {
+  padding-bottom: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 60px;
+    padding-top: 0;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 960px) {
+    border: 5px solid colors.$color-primary;
+    border-radius: 100px 0 100px 100px;
+    padding: 0;
+    max-height: 400px;
+    margin-right: 90px;
+  }
+}
+
 //Bílé pozadí
 .tasting2 {
   background-color: colors.$color-white;
@@ -27,7 +60,14 @@
 
   @media screen and (min-width: 540px) {
     padding: 15px;
-    border: solid 3px colors.$color-primary;
+    padding-right: 50px;
+  }
+}
+
+.tasting2__content--padding-left {
+  @media screen and (min-width: 540px) {
+    padding-right: 15px;
+    padding-left: 50px;
   }
 }
 
@@ -35,12 +75,31 @@
 .tasting2__image {
   @media screen and (min-width: 540px) {
     margin-bottom: 60px;
-    height: 100%;
-    object-fit: cover;
   }
 
   @media screen and (min-width: 960px) {
     margin: 0;
+    border: 5px solid colors.$color-primary;
+    border-radius: 100px;
+  }
+}
+
+//Border-radius obrázků
+.tasting2__image--border-radius1 {
+  @media screen and (min-width: 960px) {
+    border-top-right-radius: 0;
+  }
+}
+
+.tasting2__image--border-radius2 {
+  @media screen and (min-width: 960px) {
+    border-top-left-radius: 0;
+  }
+}
+
+.tasting2__image--border-radius3 {
+  @media screen and (min-width: 960px) {
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -54,8 +113,6 @@
 .tasting2__flexbox {
   @media screen and (min-width: 960px) {
     display: flex;
-    //justify-content: space-between;
-    align-items: stretch;
   }
 }
 
@@ -73,8 +130,7 @@
 
 .tasting2__content {
   @media screen and (min-width: 960px) {
-    //flex: 0 0 55%;
-    //margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -92,32 +148,6 @@
   }
 }
 
-.tasting__wines {
-  text-align: center;
-  padding: base.$spacer;
-  margin-bottom: base.$spacer;
-  border-radius: 20px;
-  border: solid 3px colors.$color-primary;
-  max-width: 300px;
-}
-
-.tasting__grid {
-  @media screen and (min-width: 540px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: base.$spacer;
-    align-items: start;
-    justify-content: space-between;
-  }
-}
-
-.tasting__wines {
-  @media screen and (min-width: 540px) {
-    margin-top: base.$spacer;
-  }
-}
-
 .tasting2__price {
   color: colors.$color-white;
   background-color: colors.$color-primary;
@@ -127,17 +157,6 @@
   height: 50px;
   font-size: 18px;
   font-weight: bold;
-}
-
-//Ikony
-.tasting__icon {
-  width: 50px;
-}
-
-//Seznam vín
-.tasting__list {
-  list-style: none;
-  padding: 0;
 }
 
 .tasting2__content-flexbox {

@@ -1,5 +1,5 @@
-@use 'colors';
-@use 'base';
+@use "colors";
+@use "base";
 
 //Stránka Vybavení
 
@@ -70,10 +70,11 @@
 .facilities2__image {
   @media screen and (min-width: 540px) {
     margin-top: base.$spacer;
+    border-radius: 100px 100px 0 100px;
+    border: 5px solid colors.$color-primary;
   }
 
   @media screen and (min-width: 960px) {
-    padding-left: 50px;
     margin: 0;
   }
 }
@@ -88,6 +89,7 @@
   .facilities__content-image,
   .facilities2__content-image {
     flex: 0 0 50%;
+    padding-left: 50px;
   }
 }
 

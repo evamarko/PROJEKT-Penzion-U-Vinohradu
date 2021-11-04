@@ -1,5 +1,5 @@
-@use 'colors';
-@use 'base';
+@use "colors";
+@use "base";
 
 //Stránka Galerie
 
@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(15, auto);
-    gap: 3px;
+    gap: 5px;
   }
 
   .gallery__image--grid {

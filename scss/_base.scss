@@ -1,4 +1,4 @@
-@use 'colors';
+@use "colors";
 
 //Breakpointy tablet (540px a více) a PC (960px a více)
 
@@ -55,7 +55,7 @@ h2::after {
   content: "";
   display: block;
   width: 100px;
-  height: 3px;
+  height: 5px;
   background-color: colors.$color-primary;
   margin-top: $body-text;
 }

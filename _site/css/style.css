@@ -44,7 +44,7 @@ h2::after {
   content: "";
   display: block;
   width: 100px;
-  height: 3px;
+  height: 5px;
   background-color: #355e3b;
   margin-top: 16px;
 }
@@ -309,7 +309,7 @@ h3 {
   .menu__link--active {
     color: #080808;
     background-color: #f8f8f8;
-    box-shadow: 0px -4px 0px 0px #355e3b inset;
+    box-shadow: 0px -5px 0px 0px #355e3b inset;
   }
 }
 
@@ -336,6 +336,8 @@ h3 {
 @media screen and (min-width: 540px) {
   .homepage__image {
     margin: 30px 0 0 0;
+    border-radius: 100px 0 100px 100px;
+    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
@@ -351,6 +353,8 @@ h3 {
 @media screen and (min-width: 540px) {
   .homepage2__image {
     margin: 30px 0 0 0;
+    border-radius: 100px 100px 100px 0;
+    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
@@ -504,12 +508,13 @@ h3 {
   .facilities__image,
 .facilities2__image {
     margin-top: 30px;
+    border-radius: 100px 100px 0 100px;
+    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
   .facilities__image,
 .facilities2__image {
-    padding-left: 50px;
     margin: 0;
   }
 }
@@ -523,6 +528,7 @@ h3 {
   .facilities__content-image,
 .facilities2__content-image {
     flex: 0 0 50%;
+    padding-left: 50px;
   }
 }
 .facilities2__link {
@@ -631,6 +637,34 @@ h3 {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .accommodation2__image-room {
+    border: 5px solid #355e3b;
+    border-radius: 0 100px 100px 100px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .accommodation2__image-room2 {
+    border: 5px solid #355e3b;
+    border-radius: 100px 100px 100px 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .accommodation3__image-room {
+    border: 5px solid #355e3b;
+    border-radius: 0 100px 100px 100px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .accommodation3__image-room2 {
+    border: 5px solid #355e3b;
+    border-radius: 100px 100px 100px 0;
+  }
+}
+
 .accommodation2__table,
 .accommodation3__table {
   text-align: center;
@@ -686,6 +720,40 @@ td {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .tasting__flexbox {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tasting__flexbox-item {
+    flex: 0 0 60%;
+  }
+}
+
+.tasting__image {
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 540px) {
+  .tasting__image {
+    padding: 60px;
+    padding-top: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tasting__image {
+    border: 5px solid #355e3b;
+    border-radius: 100px 0 100px 100px;
+    padding: 0;
+    max-height: 400px;
+    margin-right: 90px;
+  }
+}
+
 .tasting2 {
   background-color: #f8f8f8;
 }
@@ -696,21 +764,45 @@ td {
 @media screen and (min-width: 540px) {
   .tasting2__content {
     padding: 15px;
-    border: solid 3px #355e3b;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .tasting2__content--padding-left {
+    padding-right: 15px;
+    padding-left: 50px;
   }
 }
 
 @media screen and (min-width: 540px) {
   .tasting2__image {
     margin-bottom: 60px;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 }
 @media screen and (min-width: 960px) {
   .tasting2__image {
     margin: 0;
+    border: 5px solid #355e3b;
+    border-radius: 100px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tasting2__image--border-radius1 {
+    border-top-right-radius: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tasting2__image--border-radius2 {
+    border-top-left-radius: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tasting2__image--border-radius3 {
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -723,7 +815,6 @@ td {
 @media screen and (min-width: 960px) {
   .tasting2__flexbox {
     display: flex;
-    align-items: stretch;
   }
 }
 
@@ -736,6 +827,12 @@ td {
 @media screen and (min-width: 960px) {
   .tasting2__flexbox-item {
     flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .tasting2__content {
+    margin-bottom: 60px;
   }
 }
 
@@ -754,32 +851,6 @@ td {
   }
 }
 
-.tasting__wines {
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  border: solid 3px #355e3b;
-  max-width: 300px;
-}
-
-@media screen and (min-width: 540px) {
-  .tasting__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 30px;
-    align-items: start;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .tasting__wines {
-    margin-top: 30px;
-  }
-}
-
 .tasting2__price {
   color: #f8f8f8;
   background-color: #355e3b;
@@ -789,15 +860,6 @@ td {
   height: 50px;
   font-size: 18px;
   font-weight: bold;
-}
-
-.tasting__icon {
-  width: 50px;
-}
-
-.tasting__list {
-  list-style: none;
-  padding: 0;
 }
 
 @media screen and (min-width: 540px) {
@@ -831,7 +893,7 @@ td {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(15, auto);
-    gap: 3px;
+    gap: 5px;
   }
 
   .gallery__image--grid {
@@ -984,12 +1046,15 @@ td {
 @media screen and (min-width: 960px) {
   .contact2__map-window {
     height: 400px;
+    border: 5px solid #355e3b;
+    border-radius: 0 50px 50px 50px;
   }
 }
 
 @media screen and (min-width: 960px) {
   .contact__flexbox {
     display: flex;
+    gap: 90px;
   }
 
   .contact__flexbox-item {
