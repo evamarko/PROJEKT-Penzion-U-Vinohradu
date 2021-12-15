@@ -542,5 +542,42 @@
       </p>
     </div>
     <script src="/js/fslightbox.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"
+    ></script>
+
+    <!-- COOKIE LIŠTA START -->
+    <script
+      type="text/javascript"
+      src="https://www.cookie-lista.cz/BeeCookie/BeeCookie.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        var options = {
+          theme: "white",
+          position: "bottom",
+          distance: 20,
+          borderRadius: 4,
+          background: "#ffffff",
+          backgroundOpacity: "0.9",
+          fontSize: 14,
+          text: "Tyto webové stránky používají k poskytování svých služeb soubory Cookies. Používáním těchto webových stránek souhlasíte s použitím souborů Cookies.",
+          html: false,
+          textColor: "#333333",
+          showButton: true,
+          buttonText: "SOUHLASÍM!",
+          buttonColor: "#ffffff",
+          buttonBgColor: "#355e3b",
+          moreButtonText: "Více informací o Cookies",
+          moreButtonColor: "#355e3b",
+          moreButtonLink: "https://www.cookie-lista.cz/co-je-cookies.html",
+          showCloseButton: false,
+          cookieDays: 365,
+        };
+        $("body").BeeCookie(options);
+      });
+    </script>
+    <!-- COOKIE LIŠTA KONEC -->
   </body>
 </html>
