@@ -891,13 +891,9 @@ td {
   .gallery__grid {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(15, auto);
     gap: 5px;
-  }
-
-  .gallery__image--grid {
-    grid-column: 1/-1;
   }
 
   .gallery__image--shower {
@@ -917,6 +913,12 @@ td {
   height: 100%;
 }
 
+@media screen and (min-width: 540px) {
+  .gallery__image--grid {
+    grid-column: 1/-1;
+    max-height: 450px;
+  }
+}
 .contact {
   padding: 30px;
 }
