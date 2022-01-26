@@ -96,6 +96,15 @@ h3 {
   }
 }
 
+.footer__headline3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: colors.$color-white;
+  margin-top: $body-text;
+}
+
 //Padding pro všechny sekce tablet a PC
 section {
   @media screen and (min-width: 540px) {

@@ -87,6 +87,15 @@ h3 {
   }
 }
 
+.footer__headline3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f8f8f8;
+  margin-top: 16px;
+}
+
 @media screen and (min-width: 540px) {
   section {
     padding: 60px;
@@ -1071,25 +1080,29 @@ td {
 }
 @media screen and (min-width: 540px) {
   .footer {
-    display: flex;
     font-size: 14px;
-    padding: 30px 60px;
-    margin: 0;
+    padding: 60px;
   }
 }
 @media screen and (min-width: 960px) {
   .footer {
     font-size: 16px;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding: 90px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 2fr;
+    gap: 20px;
   }
 }
 
-.footer__contact {
-  margin-bottom: 30px;
+.footer__contact,
+.footer__menu,
+.footer__tips {
+  margin: 30px 0;
 }
-@media screen and (min-width: 540px) {
-  .footer__contact {
+@media screen and (min-width: 960px) {
+  .footer__contact,
+.footer__menu,
+.footer__tips {
     margin: 0;
   }
 }
@@ -1118,16 +1131,12 @@ td {
 .footer__list {
   list-style: none;
   padding: 0;
-  margin: 30px 0;
-}
-@media screen and (min-width: 540px) {
-  .footer__list {
-    text-align: center;
-  }
+  padding-top: 16px;
+  margin: 0;
 }
 
 .footer__list-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer__list-link {
@@ -1185,15 +1194,6 @@ td {
   align-items: center;
 }
 
-.footer__headline3 {
-  margin-top: 30px;
-}
-@media screen and (min-width: 540px) {
-  .footer__headline3 {
-    margin-top: 0;
-  }
-}
-
 .footer__list2 {
   list-style: none;
   padding: 0;
@@ -1201,7 +1201,7 @@ td {
 }
 
 .footer__list2-item {
-  padding: 5px 0;
+  margin-bottom: 20px;
 }
 
 .footer__list2-link {
@@ -1215,13 +1215,18 @@ td {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 540px) {
-  .footer__line {
-    margin: 0 30px;
-  }
+.footer__tips-flex {
+  padding-top: 16px;
 }
 @media screen and (min-width: 960px) {
+  .footer__tips-flex {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
   .footer__line {
-    margin: 0 45px;
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
