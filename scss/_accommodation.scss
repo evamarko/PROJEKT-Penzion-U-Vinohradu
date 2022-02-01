@@ -165,3 +165,17 @@ td {
     margin-left: base.$spacer;
   }
 }
+
+//Ze sklepa do sklepa
+.accommodation__zsds {
+  border: colors.$color-primary 5px solid;
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  max-width: 650px;
+}
+
+.accommodation__zsds p {
+  margin: 0;
+}
