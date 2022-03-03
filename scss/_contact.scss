@@ -16,11 +16,17 @@
   }
 }
 
-.contact2__map {
-  //padding: base.$spacer 0 60px 0;
+.contact2 {
+  padding: 0;
+}
 
+.contact2__map {
   @media screen and (min-width: 540px) {
     padding: 0;
+  }
+
+  @media screen and (min-width: 540px) {
+    padding: 90px;
   }
 }
 

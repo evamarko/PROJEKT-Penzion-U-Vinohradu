@@ -565,6 +565,13 @@ h3 {
   }
 }
 
+@media screen and (min-width: 540px) {
+  .accommodation2__contain,
+.accommodation3__contain {
+    padding-bottom: 30px;
+  }
+}
+
 .accommodation4__contain {
   padding-bottom: 60px;
 }
@@ -603,7 +610,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 960px) {
   .accommodation2__grid,
 .accommodation3__grid {
     display: grid;
@@ -619,7 +626,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 960px) {
   .accommodation2__grid-item3,
 .accommodation3__grid-item3 {
     grid-column: 1/2;
@@ -627,7 +634,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 960px) {
   .accommodation2__grid-item4,
 .accommodation3__grid-item4 {
     grid-column: 1/2;
@@ -639,35 +646,42 @@ h3 {
 .accommodation3__image {
   padding-bottom: 30px;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 960px) {
   .accommodation2__image,
 .accommodation3__image {
     padding: 0;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
+  .accommodation2__image:last-child,
+.accommodation3__image:last-child {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 540px) {
   .accommodation2__image-room {
     border: 5px solid #355e3b;
     border-radius: 0 100px 100px 100px;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .accommodation2__image-room2 {
     border: 5px solid #355e3b;
     border-radius: 100px 100px 100px 0;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .accommodation3__image-room {
     border: 5px solid #355e3b;
     border-radius: 0 100px 100px 100px;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .accommodation3__image-room2 {
     border: 5px solid #355e3b;
     border-radius: 100px 100px 100px 0;
@@ -756,20 +770,21 @@ td {
 }
 
 .tasting__image {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 540px) {
   .tasting__image {
-    padding: 60px;
-    padding-top: 0;
     -o-object-fit: cover;
        object-fit: cover;
+    border: 5px solid #355e3b;
+    border-radius: 100px 0 100px 100px;
+    margin: 0 auto 60px auto;
+    max-width: 400px;
+    display: block;
   }
 }
 @media screen and (min-width: 960px) {
   .tasting__image {
-    border: 5px solid #355e3b;
-    border-radius: 100px 0 100px 100px;
     padding: 0;
     max-height: 400px;
     margin-right: 90px;
@@ -785,12 +800,22 @@ td {
 }
 @media screen and (min-width: 540px) {
   .tasting2__content {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 960px) {
+  .tasting2__content {
     padding: 15px;
     padding-right: 50px;
   }
 }
 
 @media screen and (min-width: 540px) {
+  .tasting2__content--padding-left {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 960px) {
   .tasting2__content--padding-left {
     padding-right: 15px;
     padding-left: 50px;
@@ -800,29 +825,25 @@ td {
 @media screen and (min-width: 540px) {
   .tasting2__image {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .tasting2__image {
-    margin: 0;
+    margin-top: 30px;
     border: 5px solid #355e3b;
     border-radius: 100px;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .tasting2__image--border-radius1 {
     border-top-right-radius: 0;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .tasting2__image--border-radius2 {
     border-top-left-radius: 0;
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 540px) {
   .tasting2__image--border-radius3 {
     border-bottom-right-radius: 0;
   }
@@ -830,7 +851,7 @@ td {
 
 @media screen and (min-width: 540px) {
   .tasting2__image--margin-bottom {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -956,9 +977,18 @@ td {
   }
 }
 
+.contact2 {
+  padding: 0;
+}
+
 @media screen and (min-width: 540px) {
   .contact2__map {
     padding: 0;
+  }
+}
+@media screen and (min-width: 540px) {
+  .contact2__map {
+    padding: 90px;
   }
 }
 

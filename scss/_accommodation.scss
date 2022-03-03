@@ -15,6 +15,13 @@
   }
 }
 
+.accommodation2__contain,
+.accommodation3__contain {
+  @media screen and (min-width: 540px) {
+    padding-bottom: base.$spacer;
+  }
+}
+
 .accommodation4__contain {
   padding-bottom: 60px;
 
@@ -57,7 +64,7 @@
 //Pokoje, apartmány - grid
 .accommodation2__grid,
 .accommodation3__grid {
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 960px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -71,7 +78,7 @@
 
 .accommodation2__grid-item3,
 .accommodation3__grid-item3 {
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 960px) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -79,7 +86,7 @@
 
 .accommodation2__grid-item4,
 .accommodation3__grid-item4 {
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 960px) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -89,36 +96,42 @@
 .accommodation3__image {
   padding-bottom: base.$spacer;
 
+  @media screen and (min-width: 960px) {
+    padding: 0;
+  }
+}
+
+.accommodation2__image:last-child,
+.accommodation3__image:last-child {
   @media screen and (min-width: 540px) {
-    //margin: 0;
     padding: 0;
   }
 }
 
 //Obrázky border a border-radius
 .accommodation2__image-room {
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 540px) {
     border: 5px solid colors.$color-primary;
     border-radius: 0 100px 100px 100px;
   }
 }
 
 .accommodation2__image-room2 {
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 540px) {
     border: 5px solid colors.$color-primary;
     border-radius: 100px 100px 100px 0;
   }
 }
 
 .accommodation3__image-room {
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 540px) {
     border: 5px solid colors.$color-primary;
     border-radius: 0 100px 100px 100px;
   }
 }
 
 .accommodation3__image-room2 {
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 540px) {
     border: 5px solid colors.$color-primary;
     border-radius: 100px 100px 100px 0;
   }
