@@ -213,7 +213,7 @@ h3 {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__list {
     display: flex;
   }
@@ -226,7 +226,7 @@ h3 {
   cursor: pointer;
   background-color: #f8f8f8;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__toggler {
     display: none;
   }
@@ -244,7 +244,7 @@ h3 {
 .menu__item {
   border-bottom: 2px solid #e8e8e8;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__item {
     border: none;
     flex: 1 1 100%;
@@ -259,7 +259,7 @@ h3 {
 .menu__item--border-top {
   border-top: 2px solid #e8e8e8;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__item--border-top {
     border-top: none;
   }
@@ -278,7 +278,7 @@ h3 {
   text-align: center;
   font-size: 16px;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__link {
     font-size: 17px;
   }
@@ -314,7 +314,7 @@ h3 {
   color: #f8f8f8;
   background-color: #355e3b;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 630px) {
   .menu__link--active {
     color: #080808;
     background-color: #f8f8f8;
@@ -565,13 +565,6 @@ h3 {
   }
 }
 
-@media screen and (min-width: 540px) {
-  .accommodation2__contain,
-.accommodation3__contain {
-    padding-bottom: 30px;
-  }
-}
-
 .accommodation4__contain {
   padding-bottom: 60px;
 }
@@ -694,6 +687,18 @@ h3 {
   border-spacing: 0;
   padding: 0;
   width: 100%;
+}
+@media screen and (min-width: 540px) {
+  .accommodation2__table,
+.accommodation3__table {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .accommodation2__table,
+.accommodation3__table {
+    width: 100%;
+  }
 }
 
 th,
@@ -986,11 +991,6 @@ td {
     padding: 0;
   }
 }
-@media screen and (min-width: 540px) {
-  .contact2__map {
-    padding: 90px;
-  }
-}
 
 .contact__headline3--margin-top,
 .contact__headline2 {
@@ -1098,9 +1098,7 @@ td {
 }
 @media screen and (min-width: 960px) {
   .contact2__map-window {
-    height: 400px;
-    border: 5px solid #355e3b;
-    border-radius: 0 50px 50px 50px;
+    height: 500px;
   }
 }
 
