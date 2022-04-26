@@ -88,7 +88,6 @@
 
 //Copyright
 .footer__copyright {
-  text-align: center;
   font-size: 13px;
 
   @media screen and (min-width: 540px) {
@@ -97,11 +96,24 @@
 
   @media screen and (min-width: 960px) {
     font-size: 15px;
+    display: flex;
   }
 }
 
 .footer__copyright-text {
-  margin: 7px;
+  margin: 20px;
+}
+
+.footer__copyright-link {
+  color: colors.$color-black;
+  display: block;
+  margin: 20px;
+}
+
+.footer__copyright-link:hover,
+.footer__copyright-link:focus,
+.footer__copyright-link:active {
+  text-decoration: none;
 }
 
 //Ikony kontakty - adresa, telefon, e-mail, facebook

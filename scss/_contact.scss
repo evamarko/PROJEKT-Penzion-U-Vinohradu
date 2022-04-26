@@ -43,13 +43,21 @@
 }
 
 //Barvy odkaz
-.contact__email {
+.contact__email,
+.contact__link,
+.gdpr a {
   color: #228b22;
 }
 
 .contact__email:hover,
 .contact__email:active,
-.contact__email:focus {
+.contact__email:focus,
+.contact__link:hover,
+.contact__link:active,
+.contact__link:focus,
+.gdpr a:hover,
+.gdpr a:active,
+.gdpr a:focus {
   color: #606060;
 }
 
@@ -113,14 +121,15 @@
   color: colors.$color-white;
   font-size: 16px;
   font-family: base.$default-font;
-  border: 1.5px solid black;
+  border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .contact__form-button:hover,
 .contact__form-button:active,
 .contact__form-button:focus {
-  background-color: #606060;
+  background-color: lighten(colors.$color-primary, 5);
 }
 
 //Kontakt - mapa
@@ -147,5 +156,18 @@
 
   .contact__flexbox-item {
     flex: 0 0 50%;
+  }
+}
+
+//GDPR
+.gdpr {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 60px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 90px;
   }
 }
