@@ -747,6 +747,11 @@ td {
   margin: 0;
 }
 
+.accommodation2__information {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
 .tasting {
   padding: 30px;
 }
