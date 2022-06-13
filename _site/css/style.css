@@ -740,7 +740,8 @@ td {
   margin-top: 30px;
   font-size: 18px;
   font-weight: bold;
-  max-width: 650px;
+  max-width: 800px;
+  text-align: center;
 }
 
 .accommodation__zsds p {
