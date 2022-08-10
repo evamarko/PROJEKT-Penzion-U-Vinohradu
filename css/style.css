@@ -743,6 +743,11 @@ td {
   max-width: 800px;
   text-align: center;
 }
+@media screen and (min-width: 960px) {
+  .accommodation__zsds {
+    width: 800px;
+  }
+}
 
 .accommodation__zsds p {
   margin: 0;
