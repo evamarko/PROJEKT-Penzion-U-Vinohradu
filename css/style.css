@@ -926,9 +926,8 @@ td {
   color: #f8f8f8;
   background-color: #355e3b;
   text-align: center;
-  padding: 8px;
-  width: 200px;
-  height: 50px;
+  padding: 10px;
+  height: auto;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 30px;
