@@ -4,8 +4,8 @@
 
 //Nastavení parametrů písmo a rozměry
 $spacer: 30px;
-$body-text: 16px;
-$default-font: "Merriweather", serif;
+$body-text: 17px;
+$default-font: "Montserrat", sans-serif;
 
 //Základní nastavení CSS
 html {
@@ -40,13 +40,14 @@ h1 {
   margin: 0;
   padding: 0;
   margin-bottom: $spacer;
+  font-family: "Barlow Condensed", sans-serif;
 
   @media screen and (min-width: 540px) {
     font-size: 30px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -66,13 +67,14 @@ h2 {
   margin: 0;
   padding: 0;
   margin-bottom: $spacer;
+  font-family: "Barlow Condensed", sans-serif;
 
   @media screen and (min-width: 540px) {
     font-size: 26px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 
@@ -86,13 +88,14 @@ h3 {
   padding: 0;
   margin-bottom: 15px;
   font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
 
   @media screen and (min-width: 540px) {
     font-size: 19px;
   }
 
   @media screen and (min-width: 960px) {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
