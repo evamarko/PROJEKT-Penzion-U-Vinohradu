@@ -364,8 +364,6 @@ h3 {
 @media screen and (min-width: 540px) {
   .homepage__image {
     margin: 30px 0 0 0;
-    border-radius: 100px 0 100px 100px;
-    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
@@ -381,8 +379,6 @@ h3 {
 @media screen and (min-width: 540px) {
   .homepage2__image {
     margin: 30px 0 0 0;
-    border-radius: 100px 100px 100px 0;
-    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
@@ -533,8 +529,6 @@ h3 {
   .facilities__image,
 .facilities2__image {
     margin-top: 30px;
-    border-radius: 100px 100px 0 100px;
-    border: 5px solid #355e3b;
   }
 }
 @media screen and (min-width: 960px) {
@@ -668,34 +662,6 @@ h3 {
   }
 }
 
-@media screen and (min-width: 540px) {
-  .accommodation2__image-room {
-    border: 5px solid #355e3b;
-    border-radius: 0 100px 100px 100px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .accommodation2__image-room2 {
-    border: 5px solid #355e3b;
-    border-radius: 100px 100px 100px 0;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .accommodation3__image-room {
-    border: 5px solid #355e3b;
-    border-radius: 0 100px 100px 100px;
-  }
-}
-
-@media screen and (min-width: 540px) {
-  .accommodation3__image-room2 {
-    border: 5px solid #355e3b;
-    border-radius: 100px 100px 100px 0;
-  }
-}
-
 .accommodation2__table,
 .accommodation3__table {
   text-align: center;
@@ -807,8 +773,6 @@ td {
   .tasting__image {
     -o-object-fit: cover;
        object-fit: cover;
-    border: 5px solid #355e3b;
-    border-radius: 100px 0 100px 100px;
     margin: 0 auto 60px auto;
     max-width: 400px;
     display: block;
@@ -856,9 +820,6 @@ td {
 @media screen and (min-width: 540px) {
   .tasting2__image {
     margin-bottom: 60px;
-    margin-top: 30px;
-    border: 5px solid #355e3b;
-    border-radius: 100px;
   }
 }
 

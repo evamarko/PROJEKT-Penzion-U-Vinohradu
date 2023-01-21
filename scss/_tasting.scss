@@ -36,8 +36,8 @@
 
   @media screen and (min-width: 540px) {
     object-fit: cover;
-    border: 5px solid colors.$color-primary;
-    border-radius: 100px 0 100px 100px;
+    //border: 5px solid colors.$color-primary;
+    //border-radius: 100px 0 100px 100px;
     margin: 0 auto 60px auto;
     max-width: 400px;
     display: block;
@@ -84,9 +84,9 @@
 .tasting2__image {
   @media screen and (min-width: 540px) {
     margin-bottom: 60px;
-    margin-top: 30px;
-    border: 5px solid colors.$color-primary;
-    border-radius: 100px;
+    //margin-top: 30px;
+    //border: 5px solid colors.$color-primary;
+    //border-radius: 100px;
   }
 }
 
