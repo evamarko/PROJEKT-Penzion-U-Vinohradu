@@ -64,7 +64,8 @@
 //Logo - text, odkaz, ikona
 //Logo text
 .header__logo-text {
-  font-family: "Kalam", cursive;
+  //font-family: "Kalam", cursive;
+  //font-family: "Montserrat", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
   padding-top: 10px;
@@ -72,11 +73,11 @@
   font-weight: bold;
 
   @media screen and (min-width: 540px) {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 30px;
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 220px;
   }
 }
@@ -107,7 +108,7 @@
     margin-right: 0;
   }
 
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     width: 120px;
     margin-left: 50px;
     position: absolute;

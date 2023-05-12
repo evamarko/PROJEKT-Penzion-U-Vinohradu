@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 660px) {
     display: flex;
   }
 }
@@ -23,7 +23,7 @@
   cursor: pointer;
   background-color: colors.$color-white;
 
-  @media screen and (min-width: 630px) {
+  @media screen and (min-width: 660px) {
     display: none;
   }
 }
@@ -92,7 +92,7 @@
 }
 
 //Menu specifikace pro PC
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .header {
     left: 0;
     right: 0;
