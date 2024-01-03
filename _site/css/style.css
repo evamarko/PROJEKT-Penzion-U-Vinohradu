@@ -1286,72 +1286,15 @@ td {
 }
 
 .chybovka__section {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100vh;
-  gap: 20px;
-}
-@media screen and (min-width: 540px) {
-  .chybovka__section {
-    padding: 60px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .chybovka__section {
-    padding: 90px;
-  }
-}
-
-.chybovka__headline1 {
-  font-size: 30px;
-  margin: 0;
-}
-@media screen and (min-width: 540px) {
-  .chybovka__headline1 {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 950px) {
-  .chybovka__headline1 {
-    font-size: 50px;
-  }
 }
 
 .chybovka__text {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 @media screen and (min-width: 540px) {
   .chybovka__text {
-    font-size: 25px;
-  }
-}
-
-.chybovka__link {
-  font-size: 18px;
-  text-decoration: none;
-  color: #080808;
-  font-weight: bold;
-  border: #355e3b 3px solid;
-  padding: 15px;
-}
-@media screen and (min-width: 540px) {
-  .chybovka__link {
     font-size: 20px;
   }
-}
-
-.chybovka__link:active,
-.chybovka__link:hover,
-.chybovka__link:focus {
-  background-color: #355e3b;
-  color: #f8f8f8;
-}
-
-.chybovka__link p {
-  margin: 0;
-}
+}/*# sourceMappingURL=style.css.map */

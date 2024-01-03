@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evavalentova/PROJEKT-Penzion-Velke-Bilovice.git"
+    "url": "git+https://github.com/evamarko/PROJEKT-Penzion-Velke-Bilovice.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/evavalentova/PROJEKT-Penzion-Velke-Bilovice/issues"
+    "url": "https://github.com/evamarko/PROJEKT-Penzion-Velke-Bilovice/issues"
   },
-  "homepage": "https://github.com/evavalentova/PROJEKT-Penzion-Velke-Bilovice#readme",
+  "homepage": "https://github.com/evamarko/PROJEKT-Penzion-Velke-Bilovice#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   }

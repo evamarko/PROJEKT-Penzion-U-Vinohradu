@@ -633,37 +633,111 @@
       src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"
     ></script>
 
-    <!-- COOKIE LIŠTA START -->
+    <!-- COOKIE LIŠTA v2.0 START -->
     <script
       type="text/javascript"
-      src="https://www.cookie-lista.cz/BeeCookie/BeeCookie.js"
+      src="https://www.cookie-lista.cz/jquery.ihavecookies.js"
     ></script>
     <script type="text/javascript">
-      $(function () {
-        var options = {
-          theme: "white",
-          position: "bottom",
-          distance: 20,
-          borderRadius: 4,
-          background: "#ffffff",
-          backgroundOpacity: "0.9",
-          fontSize: 14,
-          text: "Tyto webové stránky používají k poskytování svých služeb soubory Cookies. Používáním těchto webových stránek souhlasíte s použitím souborů Cookies.",
-          html: false,
-          textColor: "#333333",
-          showButton: true,
-          buttonText: "SOUHLASÍM!",
-          buttonColor: "#ffffff",
-          buttonBgColor: "#355e3b",
-          moreButtonText: "Více informací o Cookies",
-          moreButtonColor: "#355e3b",
-          moreButtonLink: "https://www.cookie-lista.cz/co-je-cookies.html",
-          showCloseButton: false,
-          cookieDays: 365,
-        };
-        $("body").BeeCookie(options);
+      var options = {
+        box_umisteni: "right:0;bottom:0;",
+        box_sirka: "350px",
+        box_odsazeni: "0px",
+        box_odsazeni_obsah: "20px",
+        box_lhz: "30px",
+        box_phz: "0px",
+        box_psz: "0px",
+        box_lsz: "30px",
+        box_stin_hor: "0px",
+        box_stin_ver: "1px",
+        box_stin_roz: "4px",
+        box_stin_barva: "rgba(53,94,59,0.33)",
+        pozadi_obrazek: "",
+        pozadi_pruhlednost: "0.3",
+        pozadi_umisteni: "center",
+        pozadi_velikost: "cover",
+        pozadi_opakovani: "no-repeat",
+        pozadi_barva: "rgba(255,255,255,0.85)",
+        zavrit_text: "Zavřít",
+        zavrit_color: "rgb(0,0,0)",
+        zavrit_size: "13px",
+        zavrit_pozadi: "rgba(53,94,59,0.3)",
+        zavrit_margin: "-10px",
+        zavrit_padding: "9px",
+        zavrit_zaobleni: "5px",
+        title: "🍪 Používáme Cookies",
+        title_color: "rgb(53,94,59)",
+        title_size: "18px",
+        popis:
+          "Naše webové stránky používají soubory cookie. Soubory cookie jsou textové soubory, které jsou ukládány ve webovém prohlížeči nebo webovým prohlížečem v počítačovém systému uživatele. Pokud uživatel vyvolá webovou stránku, může být soubor cookie uložen v operačním systému uživatele. Tento soubor cookie obsahuje charakteristický řetězec, který umožňuje jednoznačnou identifikaci prohlížeče při opětovném vyvolání webové stránky.",
+        popis_color: "rgb(0,0,0)",
+        popis_size: "11px",
+        odkaz_text: "Více o cookies",
+        odkaz_url: "https://www.cookie-lista.cz/co-je-cookies.html",
+        odkaz_color: "rgb(53,94,59)",
+        odkaz_color_hover: "rgb(0,0,0)",
+        odkaz_size: "12px",
+        session_nadpis: "Vyberte, které soubory cookie chcete přijmout",
+        session_nadpis_velikost: "15px",
+        session_nadpis_barva: "rgb(156,227,255)",
+        session_text_barva: "rgb(255,255,255)",
+        session_pozadi_barva: "rgba(0,0,0,0.75)",
+        session_margin: "0px",
+        session_padding: "10px",
+        session_maxheight: "50vh",
+        tlacitko_1_text: "Povolit cookies",
+        tlacitko_1_padding: "15px",
+        tlacitko_1_margin: "0px",
+        tlacitko_1_text_barva: "rgb(255,255,255)",
+        tlacitko_1_pozadi: "rgb(0,0,0)",
+        tlacitko_1_text_velikost: "15px",
+        tlacitko_1_text_barva_hover: "rgb(0,0,0)",
+        tlacitko_1_pozadi_hover: "rgb(173,173,173)",
+        tlacitko_1_radius: "5px",
+        tlacitko_2_text: "Vybrat cookies",
+        tlacitko_2_padding: "15px",
+        tlacitko_2_margin: "15px",
+        tlacitko_2_text_barva: "rgb(255,255,255)",
+        tlacitko_2_pozadi: "rgb(0,0,0)",
+        tlacitko_2_text_velikost: "15px",
+        tlacitko_2_text_barva_hover: "rgb(0,0,0)",
+        tlacitko_2_pozadi_hover: "rgb(173,173,173)",
+        tlacitko_2_radius: "5px",
+        odkaz_1_nazev: "Vytvořte si vlastní cookie lištu",
+        odkaz_1_url: "https://www.cookie-lista.cz/",
+        odkaz_2_nazev: "Cookie lišta v2.0",
+        odkaz_2_url: "https://www.cookie-lista.cz/",
+        odkaz_barva: "rgb(138,138,138)",
+        odkaz_barva_hover: "rgb(0,0,0)",
+        odkaz_mezera: "35px",
+        odkaz_velikost: "12px",
+        odkaz_target: "_blank",
+        expirace: "365",
+        zmena: "ano",
+        undefined: "",
+        delay: 0,
+        expires: "365",
+        uncheckBoxes: true,
+      };
+
+      $(document).ready(function () {
+        $("body").ihavecookies(options);
+
+        if ($.fn.ihavecookies.preference("marketing") === true) {
+          //alert('Marketing je akceptován.');
+        }
+        if ($.fn.ihavecookies.preference("analytics") === true) {
+          //alert('Analytics je akceptován.');
+        }
+        if ($.fn.ihavecookies.preference("preferences") === true) {
+          //alert('Preferences je akceptován.');
+        }
+        $("#ihavecookiesBtn").on("click", function () {
+          $("#malybox").remove();
+          $("body").ihavecookies(options, "reinit");
+        });
       });
     </script>
-    <!-- COOKIE LIŠTA KONEC -->
+    <!-- COOKIE LIŠTA v2.0 KONEC -->
   </body>
 </html>
