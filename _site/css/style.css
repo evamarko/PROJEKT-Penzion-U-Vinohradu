@@ -1199,6 +1199,7 @@ td {
 
 .footer__copyright {
   font-size: 13px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 540px) {
   .footer__copyright {
@@ -1209,6 +1210,8 @@ td {
   .footer__copyright {
     font-size: 15px;
     display: flex;
+    padding-bottom: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -1282,19 +1285,5 @@ td {
 @media screen and (min-width: 960px) {
   .footer__line {
     display: none;
-  }
-}
-
-.chybovka__section {
-  height: 100vh;
-}
-
-.chybovka__text {
-  font-size: 15px;
-  text-align: center;
-}
-@media screen and (min-width: 540px) {
-  .chybovka__text {
-    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

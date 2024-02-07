@@ -89,6 +89,7 @@
 //Copyright
 .footer__copyright {
   font-size: 13px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 540px) {
     font-size: 14px;
@@ -97,6 +98,8 @@
   @media screen and (min-width: 960px) {
     font-size: 15px;
     display: flex;
+    padding-bottom: 0;
+    justify-content: flex-end;
   }
 }
 
